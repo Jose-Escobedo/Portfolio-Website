@@ -1,0 +1,23 @@
+import styled from "styled-components";
+import MainPictureWhite from "../../img/MainPictureWhite.jpg";
+
+export const MainContentStyled = styled.main`
+  min-height: 100vh;
+  position: relative;
+  margin-left: 16.3rem;
+  .lines {
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    .line-1,
+    .line-2,
+    .line-3,
+    .line-4 {
+      width: 1px;
+      min-height: 100%;
+      background-color: var(--border-color);
+    }
+  }
+`;
