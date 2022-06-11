@@ -9,6 +9,7 @@ export const MainContentStyled = styled.main`
     position: absolute;
     min-height: 100vh;
     width: 100%;
+    z-index: -99;
     display: flex;
     justify-content: space-evenly;
     .line-1,

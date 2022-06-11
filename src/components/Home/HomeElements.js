@@ -32,6 +32,15 @@ export const HomePageStyled = styled.header`
       justify-content: center;
       align-items: center;
       border-radius: 50%;
+      transition: all 0.4s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        border: 2px solid var(--primary-color);
+        color: var(--primary-color);
+      }
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
       svg {
         margin: 0.5rem;
       }

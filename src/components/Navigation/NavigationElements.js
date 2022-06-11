@@ -32,9 +32,13 @@ export const NavigationStyled = styled.nav`
 
       a {
         display: block;
-        padding: 0.2rem 0;
+        padding: 0.45rem 0;
         position: relative;
         z-index: 4;
+        text-transform: uppercase;
+        transition: all 0.4s ease-in-out;
+        font-weight: 600;
+        letter-spacing: 1px;
         &:hover {
           cursor: pointer;
         }

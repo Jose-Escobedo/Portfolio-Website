@@ -16,15 +16,24 @@ const HomePage = () => {
             aliquet.
           </p>
           <div className="icons">
-            <div className="icon i-linkedin">
+            <a
+              href="https://www.linkedin.com/in/jose-escobedo-89b943232/"
+              className="icon i-linkedin"
+            >
               <FaLinkedin />
-            </div>
-            <div className="icon i-github">
+            </a>
+            <a
+              href="https://github.com/Jose-Escobedo"
+              className="icon i-github"
+            >
               <FaGithub />
-            </div>
-            <div className="icon i-medium">
+            </a>
+            <a
+              href="https://medium.com/@escobedo.jose"
+              className="icon i-medium"
+            >
               <FaMedium />
-            </div>
+            </a>
           </div>
         </div>
       </div>
