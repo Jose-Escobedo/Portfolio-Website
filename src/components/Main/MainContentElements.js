@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import MainPictureWhite from "../../img/MainPictureWhite.jpg";
 
 export const MainContentStyled = styled.main`
   min-height: 100vh;

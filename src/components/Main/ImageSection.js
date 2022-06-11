@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import resume from "../../img/resume.jpg";
+import about from "../../img/about.jpg";
+import PrimaryButton from "./PrimaryButton";
 
 const ImageSection = () => {
   return (
     <ImageSectionStyled>
       <div className="left-content">
-        <img src={resume} alt="resume" />
+        <img src={about} alt="about" />
       </div>
       <div className="right-content">
         <h4>
@@ -30,11 +31,13 @@ const ImageSection = () => {
           <div className="info">
             <p>: Lorem Ipsum</p>
             <p>: 22</p>
+            <p>: American</p>
             <p>: Spanish, English</p>
             <p>: California, United States</p>
             <p>: Freelance</p>
           </div>
         </div>
+        <PrimaryButton title={"Download Cv"} />
       </div>
     </ImageSectionStyled>
   );
@@ -46,7 +49,8 @@ const ImageSectionStyled = styled.div`
   .left-content {
     width: 100%;
     img {
-      width: 90%;
+      width: 95%;
+      object-fit: cover;
     }
   }
   .right-content {
@@ -61,6 +65,7 @@ const ImageSectionStyled = styled.div`
     }
     .about-info {
       display: flex;
+      padding-bottom: 1.4rem;
       .info-title {
         padding-right: 3rem;
         p {
