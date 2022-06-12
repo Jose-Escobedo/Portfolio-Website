@@ -14,15 +14,20 @@ const PrimaryButtonStyled = styled.a`
   font-size: inherit;
   text-transform: uppercase;
   position: relative;
-  &:hover::after {
+  transition: all 0.4s ease-in-out;
+  &::after {
     content: "";
     position: absolute;
     width: 100%;
     height: 0.2rem;
-    background-color: var(--white-color);
     transition: all 0.4s ease-in-out;
     left: 0;
     bottom: 0;
+    opacity: 0.7;
+  }
+  &:hover::after {
+    width: 100%;
+    background-color: var(--white-color);
   }
 `;
 export default PrimaryButton;

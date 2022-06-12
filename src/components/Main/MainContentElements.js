@@ -6,7 +6,7 @@ export const MainContentStyled = styled.main`
   margin-left: 16.3rem;
   .lines {
     position: absolute;
-    min-height: 100vh;
+    min-height: 100%;
     width: 100%;
     z-index: -99;
     display: flex;
