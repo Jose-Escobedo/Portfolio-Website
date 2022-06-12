@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const SidebarStyled = styled.div`
-  width: 16.3rem;
-  height: 100vh;
+  width: 5rem;
+  height: 50vh;
   position: fixed;
-  background-color: var(--sidebar-dark-color);
+  top: 25%;
+  z-index: 100;
 `;
