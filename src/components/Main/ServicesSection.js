@@ -17,7 +17,7 @@ const ServicesSection = () => {
             image={design}
             title={"Design"}
             paragraph={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donecvenenatis malesuada."
+              "Along with my Adobe Photoshop skills, I am able to create and design in Figma."
             }
           />
           <div className="mid-card">
@@ -25,7 +25,7 @@ const ServicesSection = () => {
               image={frontend}
               title={"Frontend"}
               paragraph={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donecvenenatis malesuada."
+                "My experience with React JS allows me to bring beautiful user interfaces to life."
               }
             />
           </div>
@@ -33,7 +33,7 @@ const ServicesSection = () => {
             image={backend}
             title={"Backend"}
             paragraph={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donecvenenatis malesuada."
+              "With my knowledge in Ruby, I can create the desired backend with Ruby on Rails."
             }
           />
         </div>

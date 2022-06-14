@@ -28,8 +28,10 @@ const GlobalStyle = createGlobalStyle`
 
 body{
 
-    background-color: var(--background-dark-color);
-    color: var(--font-light-color);
+background: #141E30;
+background: -webkit-linear-gradient(to right, #243B55, #141E30);  
+background: linear-gradient(to right, #243B55, #141E30); 
+color: var(--font-light-color);
 }
 
 a{

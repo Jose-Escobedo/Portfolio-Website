@@ -6,45 +6,63 @@ export const NavigationStyled = styled.nav`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100%;
-
+  min-height: 100%;
+  span {
+    font-size: 1em;
+  }
   .nav-items {
     width: 50%;
     text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 100%;
-    padding: 0.5rem 0;
+    padding: 0.5em 0;
     .active-class {
       background-color: var(--primary-color);
     }
+
     li {
-      display: block;
+      display: flex;
       border-radius: 50%;
-      border: 1px solid black;
-      margin: 0.25rem 0;
-      background: #3a4f66;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid var(--border-color);
+      margin: 0.25em 0;
+      transition: all 0.3s ease-out;
+      background: #19293b;
+      .icon_title {
+        display: none;
+        font-family: montserrat, sans-serif;
+        font-size: 1em;
+        font-weight: 300;
+      }
+
+      &:hover .icon_title {
+        display: initial;
+        margin-left: 0.4em;
+        color: var(--white-color);
+      }
+      &:hover {
+        width: min-content;
+        padding: 0em 0.5em;
+        border-radius: 1em;
+        vertical-align: middle;
+        text-align: center;
+        cursor: pointer;
+      }
+      &:hover::before {
+        width: 100%;
+        height: 100%;
+      }
       a {
         display: block;
         position: relative;
         z-index: 4;
         padding: 0.5rem 0;
         transition: all 0.4s ease-in-out;
+
         &:hover {
           cursor: pointer;
-        }
-        &::before {
-          content: "";
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 0;
-          height: 50%;
-          background-color: var(--primary-color);
-          transition: All 0.4s cubic-bezier(1, -0.2, 0.25, 0.95);
-          z-index: 3;
-          opacity: 0.21;
         }
       }
 

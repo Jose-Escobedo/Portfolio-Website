@@ -1,7 +1,5 @@
 import React from "react";
 import { NavigationStyled } from "./NavigationElements";
-import avatar from "../../img/avatar.jpg";
-import { NavLink } from "react-router-dom";
 import NavListData from "./NavListData";
 
 const Navigation = () => {

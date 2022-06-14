@@ -7,22 +7,20 @@ import { IoIosPaper } from "react-icons/io";
 
 const NavListData = () => {
   const [items, setItems] = useState([
-    { name: "Home", route: "/", icon: FaHome, isActive: false },
-    { name: "About", route: "/about", icon: BsFillPersonFill, isActive: false },
+    { name: "Home", route: "/", icon: FaHome },
+    { name: "About", route: "/about", icon: BsFillPersonFill },
     {
       name: "Experience",
       route: "/experience",
       icon: RiTeamFill,
-      isActive: false,
     },
     {
       name: "Projects",
       route: "/projects",
       icon: FaCode,
-      isActive: false,
     },
-    { name: "Resume", route: "/resume", icon: IoIosPaper, isActive: false },
-    { name: "Contact", route: "/contact", icon: FaPhoneAlt, isActive: false },
+    { name: "Resume", route: "/resume", icon: IoIosPaper },
+    { name: "Contact", route: "/contact", icon: FaPhoneAlt },
   ]);
 
   const list = items.map((item, index) => {
@@ -30,6 +28,9 @@ const NavListData = () => {
       <li key={index} className="nav-item">
         <NavLink to={item.route} className={"sidebar-link"}>
           {item.icon}
+        </NavLink>
+        <NavLink to={item.route} className={"sidebar-link"}>
+          <span className="icon_title">{item.name}</span>{" "}
         </NavLink>
       </li>
     );

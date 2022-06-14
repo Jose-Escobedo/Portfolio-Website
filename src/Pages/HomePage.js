@@ -8,12 +8,11 @@ const HomePage = () => {
       <div className="home">
         <div className="typography">
           <h1>
-            Hi I'm <span>Jose Escobedo</span>
+            Hello, I'm <span>Jose Escobedo.</span>
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            venenatis malesuada mauris, nec pharetra risus nec. Sed sagittis
-            aliquet.
+            I’m a full stack web developer who loves to build things for the
+            web.
           </p>
           <div className="icons">
             <a

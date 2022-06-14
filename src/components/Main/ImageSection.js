@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import about from "../../img/about.jpg";
+import about from "../../img/about.png";
 import PrimaryButton from "./PrimaryButton";
 
 const ImageSection = () => {
@@ -11,30 +11,29 @@ const ImageSection = () => {
       </div>
       <div className="right-content">
         <h4>
-          I am <span>Lorem Ipsum</span>
+          I am <span>Jose Escobedo</span>
         </h4>
 
         <p className="paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          venenatis malesuada mauris, nec pharetra risus nec. Sed sagittis
-          aliquet.
+          As a firm believer in life-long learning, I’m a full stack developer
+          with a passion for JavaScript, React and all things web development.
+          The unique combination of creativity, logic, technology and never
+          running out of new things to discover, drives my excitement and
+          passion for web development. When I’m not at my computer I like to
+          spend my time shooting photography, reading and hiking.
         </p>
         <div className="about-info">
           <div className="info-title">
             <p>Full Name</p>
             <p>Age</p>
-            <p>Nationality</p>
             <p>Languages</p>
             <p>Location</p>
-            <p>Service</p>
           </div>
           <div className="info">
-            <p>: Lorem Ipsum</p>
+            <p>: Jose Escobedo</p>
             <p>: 22</p>
-            <p>: American</p>
             <p>: Spanish, English</p>
             <p>: California, United States</p>
-            <p>: Freelance</p>
           </div>
         </div>
         <PrimaryButton title={"Download Cv"} />

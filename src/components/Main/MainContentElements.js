@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const MainContentStyled = styled.main`
   min-height: 100vh;
   position: relative;
-  margin-left: 5rem;
   .lines {
     position: absolute;
     min-height: 100%;

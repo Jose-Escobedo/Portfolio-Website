@@ -7,7 +7,7 @@ const PrimaryButton = ({ title }) => {
 
 const PrimaryButtonStyled = styled.a`
   background-color: var(--primary-color);
-  padding: 0.8rem 2.5rem;
+  padding: 0.6em 2em;
   color: white;
   cursor: pointer;
   display: inline-block;
@@ -19,7 +19,7 @@ const PrimaryButtonStyled = styled.a`
     content: "";
     position: absolute;
     width: 100%;
-    height: 0.2rem;
+    height: 0.2em;
     transition: all 0.4s ease-in-out;
     left: 0;
     bottom: 0;
