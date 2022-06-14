@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { InnerLayout } from "../../styles/Layouts";
 import SkillItem from "./SkillItem";
-import Title from "./Title";
+import Title from "../Main/Title";
 import { useState } from "react";
 import HTML from "../../img/html.svg";
 import CSS from "../../img/css.svg";

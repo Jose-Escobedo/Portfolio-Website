@@ -55,7 +55,9 @@ const ImageSectionStyled = styled.div`
   .right-content {
     h4 {
       font-size: 2rem;
-      color: var(--white-color) span {
+      color: var(--white-color);
+      color: var(--white-color);
+      span {
         font-size: 2rem;
       }
     }
@@ -76,6 +78,9 @@ const ImageSectionStyled = styled.div`
         p {
           padding: 0.3rem 0;
         }
+      }
+      .info p {
+        color: var(--white-color);
       }
     }
   }

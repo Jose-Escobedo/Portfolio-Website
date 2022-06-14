@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { InnerLayout } from "../../styles/Layouts";
-import Title from "./Title";
+import Title from "../Main/Title";
 import ServiceCard from "./ServiceCard";
 import frontend from "../../img/frontend.svg";
 import backend from "../../img/backend.svg";

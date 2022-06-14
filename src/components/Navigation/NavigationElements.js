@@ -17,9 +17,6 @@ export const NavigationStyled = styled.nav`
     justify-content: center;
     flex-direction: column;
     padding: 0.5em 0;
-    .active-class {
-      background-color: var(--primary-color);
-    }
 
     li {
       display: flex;
@@ -29,7 +26,7 @@ export const NavigationStyled = styled.nav`
       border: 1px solid var(--border-color);
       margin: 0.25em 0;
       transition: all 0.3s ease-out;
-      background: #19293b;
+      background: linear-gradient(var(--primary-color), #003e80) padding-box;
       .icon_title {
         display: none;
         font-family: montserrat, sans-serif;

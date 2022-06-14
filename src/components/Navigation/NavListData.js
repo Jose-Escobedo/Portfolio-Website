@@ -26,11 +26,9 @@ const NavListData = () => {
   const list = items.map((item, index) => {
     return (
       <li key={index} className="nav-item">
-        <NavLink to={item.route} className={"sidebar-link"}>
-          {item.icon}
-        </NavLink>
-        <NavLink to={item.route} className={"sidebar-link"}>
-          <span className="icon_title">{item.name}</span>{" "}
+        <NavLink to={item.route}>{item.icon}</NavLink>
+        <NavLink to={item.route}>
+          <span className="icon_title">{item.name}</span>
         </NavLink>
       </li>
     );
