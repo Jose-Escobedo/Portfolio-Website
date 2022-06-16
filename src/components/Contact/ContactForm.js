@@ -59,7 +59,10 @@ const ContactForm = () => {
             <li className="list-item">
               <FaEnvelope />
               <span className="contact-text">
-                <a href="mailto:#" title="Send me an email">
+                <a
+                  href="mailto:joseescobedo888@outlook.com"
+                  title="Send me an email"
+                >
                   joseescobedo888@outlook.com
                 </a>
               </span>
