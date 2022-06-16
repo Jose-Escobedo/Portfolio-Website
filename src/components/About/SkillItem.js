@@ -17,11 +17,14 @@ const SkillItemStyled = styled.div`
   justify-content: center;
   align-items: center;
   border: 1px solid transparent;
-  border-radius: 1em;
+  border-radius: 0.5em;
   position: relative;
   text-align: center;
-  background: linear-gradient(var(--background-dark-grey), var(--border-color))
-      padding-box,
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    transform: translateY(2px);
+  }
+  background: linear-gradient(#010106, var(--border-color)) padding-box,
     linear-gradient(to right, var(--white-color), var(--white-color)) border-box;
   img {
     height: 2.5em;

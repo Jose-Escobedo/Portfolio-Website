@@ -6,7 +6,9 @@ const ProjectSection = () => {
   return (
     <ProjectSectionStyled>
       <div className="project-container">
-        <img src={Phonify} />
+        <div className="project-img-border">
+          <img src={Phonify} />
+        </div>
         <div className="project-desc-container">
           <h2>Phonify</h2>
           <h3>E-commerce App</h3>
@@ -31,23 +33,30 @@ const ProjectSection = () => {
 const ProjectSectionStyled = styled.div`
   .project-container {
     display: flex;
+    background: linear-gradient(#010106, var(--background-dark-grey))
+      padding-box;
     margin-top: 5rem;
-    background: var(--background-dark-grey);
-    width: 80%;
-    padding: 2.5em;
-    padding-left: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 4em 2em;
     position: relative;
     img {
-      width: 90%;
+      width: 95%;
       object-fit: cover;
+    }
+  }
+  .project-img-border {
+    width: 70%;
+    transition: transform 0.5s;
+    &:hover {
+      transform: scale(0.95);
     }
   }
   .project-desc-container {
     display: flex;
     flex-direction: column;
     z-index: 99;
-    position: absolute;
-    margin-left: 38em;
     width: 45%;
     h2 {
       font-size: 2em;

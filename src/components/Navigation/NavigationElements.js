@@ -24,9 +24,10 @@ export const NavigationStyled = styled.nav`
       justify-content: center;
       align-items: center;
       border: 1px solid var(--border-color);
-      margin: 0.25em 0;
+      margin: 0.3em 0;
       transition: all 0.3s ease-out;
-      background: linear-gradient(var(--primary-color), #003e80) padding-box;
+      /* background: linear-gradient(var(--primary-color), #003e80) padding-box; */
+      background: linear-gradient(#010106, #00254c) padding-box;
       .icon_title {
         display: none;
         font-family: montserrat, sans-serif;

@@ -3,8 +3,6 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import { MainContentStyled } from "./components/Main/MainContentElements";
 import HomePage from "./Pages/HomePage";
 import AboutPage from "./Pages/AboutPage";
-import ExperiencePage from "./Pages/ExperiencePage";
-import ResumePage from "./Pages/ResumePage";
 import ProjectsPage from "./Pages/ProjectsPage";
 import ContactPage from "./Pages/ContactPage";
 import { Routes, Route } from "react-router-dom";
@@ -19,8 +17,6 @@ function App() {
         <Routes>
           <Route path="/" exact element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/experience" element={<ExperiencePage />} />
-          <Route path="/resume" element={<ResumePage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/Contact" element={<ContactPage />} />
         </Routes>

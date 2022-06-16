@@ -38,7 +38,7 @@ const SkillsSection = () => {
       <InnerLayout>
         <div className="skills">
           {skills.map((skill) => {
-            return <SkillItem skill={skill} />;
+            return <SkillItem skill={skill} key={skill.name} />;
           })}
         </div>
       </InnerLayout>

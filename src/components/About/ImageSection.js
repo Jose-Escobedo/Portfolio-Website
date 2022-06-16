@@ -19,7 +19,7 @@ const ImageSection = () => {
           with a passion for JavaScript, React and all things web development.
           The unique combination of creativity, logic, technology and never
           running out of new things to discover, drives my excitement and
-          passion for web development. When I’m not at my computer I like to
+          passion for web development. When I’m not at my computer, I like to
           spend my time shooting photography, reading and hiking.
         </p>
         <div className="about-info">
@@ -36,7 +36,7 @@ const ImageSection = () => {
             <p>: California, United States</p>
           </div>
         </div>
-        <PrimaryButton title={"Download Cv"} />
+        <PrimaryButton title={"View Resume"} />
       </div>
     </ImageSectionStyled>
   );
@@ -45,14 +45,19 @@ const ImageSection = () => {
 const ImageSectionStyled = styled.div`
   margin-top: 5rem;
   display: flex;
+  width: 100%;
+  justify-content: center;
+
   .left-content {
-    width: 100%;
+    width: 50%;
     img {
       width: 95%;
+      height: 90%;
       object-fit: cover;
     }
   }
   .right-content {
+    width: 50%;
     h4 {
       font-size: 2rem;
       color: var(--white-color);
@@ -63,6 +68,7 @@ const ImageSectionStyled = styled.div`
     }
     .paragraph {
       padding: 1rem 0;
+      color: var(--white-color);
     }
     .about-info {
       display: flex;

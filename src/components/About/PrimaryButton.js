@@ -6,8 +6,8 @@ const PrimaryButton = ({ title }) => {
 };
 
 const PrimaryButtonStyled = styled.a`
-  background-color: var(--primary-color);
-  padding: 0.6em 2em;
+  background: linear-gradient(var(--primary-color), #003e80) padding-box;
+  padding: 0.5em 2em;
   color: white;
   cursor: pointer;
   display: inline-block;
