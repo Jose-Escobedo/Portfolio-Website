@@ -25,5 +25,9 @@ function App() {
   );
 }
 
-export const StyledApp = styled.div``;
+export const StyledApp = styled.div`
+  @media screen and (max-width: 480px) {
+    position: relative;
+  }
+`;
 export default App;

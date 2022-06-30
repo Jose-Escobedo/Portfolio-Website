@@ -17,6 +17,7 @@ export const HomePageStyled = styled.header`
     position: absolute;
     top: 50%;
     left: 50%;
+    font-size: 1rem;
     transform: translate(-50%, -50%);
     text-align: center;
     width: 70%;
@@ -94,6 +95,31 @@ export const HomePageStyled = styled.header`
       svg {
         margin: 0.5rem;
       }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    p {
+      font-size: 1rem;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    span {
+      font-size: 2.3rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    p {
+      font-size: 0.9rem;
+      line-height: 1.6em;
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
+    span {
+      font-size: 2rem;
     }
   }
 `;
