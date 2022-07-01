@@ -87,7 +87,8 @@ export const NavigationStyled = styled.nav`
       flex-direction: row;
       justify-content: space-evenly;
       width: 100%;
-      padding: 1rem 1rem;
+      padding: 0.5em 1em;
+      background-color: rgba(0, 0, 0, 0.5);
       li {
         &:hover .icon_title {
           display: none;
@@ -95,7 +96,7 @@ export const NavigationStyled = styled.nav`
         }
         &:hover {
           vertical-align: none;
-          border-radius: 50%;
+          border-radius: 30%;
           width: min-content;
           color: var(--primary-color);
         }
@@ -120,8 +121,8 @@ export const NavigationStyled = styled.nav`
     }
     li {
       margin: 1em 0.5em;
-      min-width: 2.5em;
-      min-height: 3em;
+      min-width: 2.2em;
+      min-height: 2.2em;
     }
   }
 `;
