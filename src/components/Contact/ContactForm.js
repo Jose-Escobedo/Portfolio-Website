@@ -10,6 +10,12 @@ import {
 } from "react-icons/fa";
 
 const ContactForm = () => {
+  const githubLink = "https://github.com/Jose-Escobedo";
+  const linkedInLink = "https://www.linkedin.com/in/jose-escobedo-89b943232/";
+  const mediumLink = "https://medium.com/@escobedo.jose";
+  const linkClick = (url) => {
+    window.location.assign(url);
+  };
   return (
     <ContactFormStyled>
       <div className="contact-wrapper">
@@ -68,30 +74,18 @@ const ContactForm = () => {
 
           <div className="social-media-container">
             <ul className="social-media-list">
-              <li>
-                <a
-                  href="https://github.com/Jose-Escobedo"
-                  target="_blank"
-                  className="contact-icon"
-                >
+              <li onClick={(e) => linkClick(githubLink)}>
+                <a className="contact-icon" href={githubLink}>
                   <FaGithub />
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/jose-escobedo-89b943232/"
-                  target="_blank"
-                  className="contact-icon"
-                >
+              <li onClick={(e) => linkClick(linkedInLink)}>
+                <a className="contact-icon" href={linkedInLink}>
                   <FaLinkedin />
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://medium.com/@escobedo.jose"
-                  target="_blank"
-                  className="contact-icon"
-                >
+              <li onClick={(e) => linkClick(mediumLink)}>
+                <a className="contact-icon" href={mediumLink}>
                   <FaMedium />
                 </a>
               </li>
