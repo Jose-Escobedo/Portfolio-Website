@@ -87,7 +87,8 @@ export const NavigationStyled = styled.nav`
       flex-direction: row;
       justify-content: space-evenly;
       width: 100%;
-      padding: 0.5em 1em;
+      padding: 1.4em 1em;
+
       li {
         &:hover .icon_title {
           display: none;
