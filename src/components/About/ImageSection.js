@@ -124,6 +124,14 @@ const ImageSectionStyled = styled.div`
         align-items: center;
       }
     }
+    @media screen and (max-width: 390px) {
+      .info-title p {
+        font-size: 0.7rem;
+      }
+      .info p {
+        font-size: 0.7rem;
+      }
+    }
   }
 `;
 
