@@ -103,11 +103,18 @@ const ImageSectionStyled = styled.div`
     @media screen and (max-width: 480px) {
       width: 100%;
       text-align: center;
+      margin-top: 1rem;
       .info p {
         font-size: 0.85rem;
       }
       .info-title p {
         font-size: 0.85rem;
+      }
+      h4 {
+        font-size: 1.5rem;
+        span {
+          font-size: 1.5rem;
+        }
       }
     }
   }
