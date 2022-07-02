@@ -104,6 +104,9 @@ const ImageSectionStyled = styled.div`
       width: 100%;
       text-align: center;
       margin-top: 1rem;
+      p {
+        font-size: 1.1rem;
+      }
       .info p {
         font-size: 0.85rem;
       }
@@ -115,6 +118,10 @@ const ImageSectionStyled = styled.div`
         span {
           font-size: 1.5rem;
         }
+      }
+      .about-info {
+        justify-content: center;
+        align-items: center;
       }
     }
   }
