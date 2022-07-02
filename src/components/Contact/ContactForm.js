@@ -100,8 +100,8 @@ const ContactForm = () => {
 };
 
 const ContactFormStyled = styled.div`
-  height: 100%;
-  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
@@ -115,6 +115,12 @@ const ContactFormStyled = styled.div`
     width: 100%;
     background: linear-gradient(#010106, var(--background-dark-grey))
       padding-box;
+
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      width: 100%;
+      padding-bottom: 3em;
+    }
   }
 
   .form-horizontal {
@@ -124,6 +130,10 @@ const ContactFormStyled = styled.div`
     display: flex;
     flex-direction: column;
     padding: 2em;
+    @media screen and (max-width: 480px) {
+      padding: 1em;
+      width: 100%;
+    }
   }
   .form-group {
     width: 100%;
@@ -191,6 +201,14 @@ const ContactFormStyled = styled.div`
     justify-content: space-between;
     flex-direction: column;
     padding: 2em;
+    @media screen and (max-width: 480px) {
+      font-size: 0.5rem;
+      padding: 1em;
+      width: 100%;
+      span {
+        width: 100%;
+      }
+    }
   }
 
   /* Location, Phone, Email Section */
@@ -207,11 +225,16 @@ const ContactFormStyled = styled.div`
     display: flex;
     align-items: center;
     margin-bottom: 1em;
+    @media screen and (max-width: 480px) {
+      margin-bottom: 1.6em;
+      line-height: 1em;
+      font-size: 1rem;
+    }
   }
 
   .contact-text {
     letter-spacing: 1.9px;
-    font-size: 0.5em;
+    font-size: 0.5rem;
     color: var(--white-color);
     text-decoration: none;
     margin-left: 1.5em;
@@ -294,6 +317,9 @@ const ContactFormStyled = styled.div`
     color: var(--white-color);
     letter-spacing: 1px;
     text-align: center;
+    @media screen and (max-width: 480px) {
+      margin-top: 1.3rem;
+    }
   }
 
   .social-media-container {

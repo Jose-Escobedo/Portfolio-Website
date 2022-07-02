@@ -15,6 +15,7 @@ const Title = ({ title, span }) => {
 
 const TitleStyled = styled.div`
   position: relative;
+
   h2 {
     color: var(--white-color);
     font-size: 3.1rem;
@@ -22,12 +23,13 @@ const TitleStyled = styled.div`
     text-transform: uppercase;
     position: relative;
     padding-bottom: 0.7rem;
+
     &::before {
       content: "";
       position: absolute;
       bottom: 0;
       width: 7.4rem;
-      height: 0.33rem;
+      min-height: 0.33rem;
       background-color: var(--background-light-color-2);
       border-radius: 15px;
       left: 0;
@@ -36,8 +38,8 @@ const TitleStyled = styled.div`
       content: "";
       position: absolute;
       bottom: 0;
-      width: 3.5rem;
-      height: 0.33rem;
+      min-width: 3.5rem;
+      min-height: 0.33rem;
       background-color: var(--primary-color);
       border-radius: 15px;
       left: 0;
@@ -51,6 +53,21 @@ const TitleStyled = styled.div`
       left: 0;
       top: 30%;
       z-index: -1;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 2rem;
+
+      &::before {
+        min-width: 3.4rem;
+        min-height: 0.17rem;
+      }
+      &::after {
+        min-width: 1.75rem;
+        min-height: 0.17rem;
+      }
+      span {
+        font-size: 4rem;
+      }
     }
   }
 `;

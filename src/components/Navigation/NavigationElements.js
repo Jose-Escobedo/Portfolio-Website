@@ -88,7 +88,6 @@ export const NavigationStyled = styled.nav`
       justify-content: space-evenly;
       width: 100%;
       padding: 0.5em 1em;
-      background-color: rgba(0, 0, 0, 0.5);
       li {
         &:hover .icon_title {
           display: none;
