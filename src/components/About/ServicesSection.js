@@ -48,6 +48,11 @@ const ServicesSectionStyled = styled.section`
     display: flex;
     justify-content: space-between;
 
+    @media screen and (max-width: 1100px) {
+      flex-direction: column;
+      grid-gap: 2rem;
+    }
+
     @media screen and (max-width: 480px) {
       flex-direction: column;
       grid-gap: 1.3rem;
@@ -55,6 +60,10 @@ const ServicesSectionStyled = styled.section`
   }
   .mid-card {
     margin: 0 1.2rem;
+
+    @media screen and (max-width: 1100px) {
+      margin: 0;
+    }
 
     @media screen and (max-width: 480px) {
       margin: 0;

@@ -36,7 +36,7 @@ const ImageSection = () => {
             <p>: California, United States</p>
           </div>
         </div>
-        <PrimaryButton title={"View Resume"} />
+        <PrimaryButton className="about-resume-btn" title={"View Resume"} />
       </div>
     </ImageSectionStyled>
   );
@@ -48,6 +48,12 @@ const ImageSectionStyled = styled.div`
   width: 100%;
   justify-content: center;
 
+  @media screen and (max-width: 1100px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   @media screen and (max-width: 480px) {
     flex-direction: column;
   }
@@ -58,6 +64,16 @@ const ImageSectionStyled = styled.div`
       width: 95%;
       min-height: 90%;
       object-fit: cover;
+    }
+    @media screen and (max-width: 1100px) {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      img {
+        width: 50%;
+        min-height: 50%;
+      }
     }
     @media screen and (max-width: 480px) {
       width: 100%;
@@ -100,18 +116,76 @@ const ImageSectionStyled = styled.div`
         color: var(--white-color);
       }
     }
+    @media screen and (max-width: 1100px) {
+      width: 100%;
+      margin-top: 3em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h4 {
+        text-align: center;
+      }
+      .paragraph {
+        font-size: 1rem;
+        text-align: center;
+      }
+      .info-title {
+        padding-right: none;
+      }
+      .info-title p {
+        font-size: 0.9rem;
+      }
+      .info p {
+        font-size: 0.9rem;
+      }
+      .about-info {
+        justify-content: center;
+        text-align: center;
+      }
+    }
+
+    @media screen and (max-width: 535px) {
+      h4 {
+        text-align: center;
+        font-size: 1.3rem;
+        display: flex;
+        flex-direction: column;
+        span {
+          font-size: 1.3rem;
+        }
+      }
+      .paragraph {
+        font-size: 0.8rem;
+        text-align: center;
+      }
+      .info-title {
+        padding-right: none;
+      }
+      .info-title p {
+        font-size: 0.7rem;
+      }
+      .info p {
+        font-size: 0.7rem;
+      }
+    }
+
     @media screen and (max-width: 480px) {
       width: 100%;
       text-align: center;
       margin-top: 1rem;
+      .paragraph {
+        font-size: 0.7rem;
+        text-align: center;
+      }
       p {
         font-size: 1.1rem;
       }
-      .info p {
-        font-size: 0.85rem;
-      }
       .info-title p {
-        font-size: 0.85rem;
+        font-size: 0.6rem;
+      }
+      .info p {
+        font-size: 0.6rem;
       }
       h4 {
         font-size: 1.5rem;
@@ -124,12 +198,23 @@ const ImageSectionStyled = styled.div`
         align-items: center;
       }
     }
-    @media screen and (max-width: 390px) {
+
+    @media screen and (max-width: 440px) {
       .info-title p {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
+        line-height: 1rem;
       }
       .info p {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
+        line-height: 1rem;
+      }
+    }
+    @media screen and (max-width: 420px) {
+      .info-title p {
+        font-size: 0.4rem;
+      }
+      .info p {
+        font-size: 0.4rem;
       }
     }
   }

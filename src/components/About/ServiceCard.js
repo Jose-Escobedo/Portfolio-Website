@@ -24,7 +24,7 @@ const ServiceCardStyled = styled.div`
     border-top: 8px solid var(--primary-color);
   }
   .container {
-    padding: 1.2rem;
+    padding: 1.2em;
     img {
       width: 50px;
       height: 50px;
@@ -35,7 +35,7 @@ const ServiceCardStyled = styled.div`
     h4 {
       color: var(--white-color);
       font-size: 1.6rem;
-      padding: 1rem 0;
+      padding: 1em 0;
       position: relative;
       padding-bottom: 1rem;
       &::after {
@@ -48,6 +48,38 @@ const ServiceCardStyled = styled.div`
         bottom: 0;
         border-radius: 10px;
       }
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 760px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 535px) {
+    p {
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media screen and (max-width: 435px) {
+    .container h4 {
+      font-size: 1rem;
+    }
+    .container img {
+      width: 40px;
+      height: 40px;
+    }
+    .container p {
+      font-size: 0.7rem;
     }
   }
 `;

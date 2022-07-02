@@ -54,34 +54,40 @@ const TitleStyled = styled.div`
       top: 30%;
       z-index: -1;
     }
-    @media screen and (max-width: 480px) {
-      font-size: 2rem;
 
-      &::before {
-        min-width: 3.4rem;
-        min-height: 0.17rem;
-      }
-      &::after {
-        min-width: 1.75rem;
-        min-height: 0.17rem;
-      }
+    @media screen and (max-width: 750px) {
+      font-size: 1.7rem;
       span {
-        font-size: 4rem;
+        font-size: 3.7rem;
       }
     }
-    @media screen and (max-width: 435px) {
+
+    @media screen and (max-width: 650px) {
       font-size: 1.5rem;
+      span {
+        font-size: 2.8rem;
+      }
+    }
+
+    @media screen and (max-width: 535px) {
+      font-size: 1.2rem;
+      span {
+        font-size: 2.4rem;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 1rem;
 
       &::before {
-        min-width: 2.8rem;
+        min-width: 3rem;
         min-height: 0.1rem;
       }
       &::after {
-        min-width: 1.3rem;
+        min-width: 1.5rem;
         min-height: 0.1rem;
       }
       span {
-        font-size: 3.3rem;
+        font-size: 1.9rem;
       }
     }
   }

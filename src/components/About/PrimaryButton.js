@@ -29,5 +29,11 @@ const PrimaryButtonStyled = styled.a`
     width: 100%;
     background-color: var(--white-color);
   }
+  @media screen and (max-width: 800px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 0.8rem;
+  }
 `;
 export default PrimaryButton;

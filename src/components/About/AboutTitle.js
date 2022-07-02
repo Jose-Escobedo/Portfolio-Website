@@ -55,34 +55,67 @@ export const AboutTitledStyled = styled.div`
       top: 30%;
       z-index: -1;
     }
-    @media screen and (max-width: 480px) {
-      font-size: 2rem;
+
+    @media screen and (max-width: 800px) {
+      font-size: 3.1rem;
+      width: 100%;
 
       &::before {
-        min-width: 3.4rem;
-        min-height: 0.17rem;
+        min-width: 7.4rem;
+        min-height: 0.34rem;
       }
       &::after {
-        min-width: 1.75rem;
-        min-height: 0.17rem;
+        min-width: 3.5rem;
+        min-height: 0.33rem;
       }
       span {
-        font-size: 3rem;
+        font-size: 4.5rem;
+        width: 100%;
       }
     }
-    @media screen and (max-width: 435px) {
+
+    @media screen and (max-width: 750px) {
+      font-size: 1.7rem;
+      span {
+        font-size: 3.7rem;
+      }
+    }
+
+    @media screen and (max-width: 650px) {
       font-size: 1.5rem;
+      span {
+        font-size: 2.8rem;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 1.8rem;
 
       &::before {
-        min-width: 2.8rem;
+        min-width: 3rem;
         min-height: 0.1rem;
       }
       &::after {
-        min-width: 1.3rem;
+        min-width: 1.5rem;
         min-height: 0.1rem;
       }
       span {
-        font-size: 2.8rem;
+        font-size: 2.3rem;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 1rem;
+
+      &::before {
+        min-width: 3rem;
+        min-height: 0.1rem;
+      }
+      &::after {
+        min-width: 1.5rem;
+        min-height: 0.1rem;
+      }
+      span {
+        font-size: 1.9rem;
       }
     }
   }
