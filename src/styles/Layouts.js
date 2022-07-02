@@ -6,7 +6,6 @@ export const MainLayout = styled.div`
   @media screen and (max-width: 480px) {
     padding: 2.5rem;
     width: 100%;
-    border: 1px solid red;
   }
   @media screen and (max-width: 760px) {
     width: 100%;
