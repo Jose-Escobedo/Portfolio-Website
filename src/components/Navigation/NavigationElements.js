@@ -73,7 +73,7 @@ export const NavigationStyled = styled.nav`
 
   @media screen and (max-width: 480px) {
     position: relative;
-    justify-content: flex-end;
+    justify-content: flex-start;
     animation: fadein 5s ease-in 1;
     @keyframes fadein {
       0% {

@@ -146,16 +146,29 @@ const ContactFormStyled = styled.div`
     border: none;
     border: 1px solid var(--white-color);
     padding: 0.5em 0.5em;
+    @media screen and (max-width: 480px) {
+      font-size: 0.9rem;
+    }
+    @media screen and (max-width: 435px) {
+      font-size: 0.85rem;
+    }
   }
 
   textarea {
     width: 100%;
     max-width: 100%;
+    max-height: 150%;
     background-color: transparent;
     color: var(--white-color);
     letter-spacing: 1px;
     border: 1px solid var(--white-color);
     padding: 0.5em 0.5em;
+    @media screen and (max-width: 480px) {
+      font-size: 0.9rem;
+    }
+    @media screen and (max-width: 435px) {
+      font-size: 0.85rem;
+    }
   }
 
   .paper-plane {
@@ -206,8 +219,11 @@ const ContactFormStyled = styled.div`
       padding: 1em;
       width: 100%;
       span {
-        width: 100%;
+        max-width: 100%;
       }
+    }
+    @media screen and (max-width: 435px) {
+      font-size: 0.3rem;
     }
   }
 
@@ -238,15 +254,24 @@ const ContactFormStyled = styled.div`
     color: var(--white-color);
     text-decoration: none;
     margin-left: 1.5em;
+    @media screen and (max-width: 435px) {
+      font-size: 0.8rem;
+    }
   }
 
   .contact-list span {
-    font-size: 0.8em;
+    font-size: 0.8rem;
+    @media screen and (max-width: 435px) {
+      font-size: 0.7rem;
+    }
   }
 
   .contact-text a {
     text-decoration: none;
     transition-duration: 0.2s;
+    @media screen and (max-width: 435px) {
+      font-size: 0.8rem;
+    }
   }
 
   .contact-text a:hover {

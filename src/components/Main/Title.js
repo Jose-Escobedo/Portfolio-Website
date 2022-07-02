@@ -69,6 +69,21 @@ const TitleStyled = styled.div`
         font-size: 4rem;
       }
     }
+    @media screen and (max-width: 435px) {
+      font-size: 1.5rem;
+
+      &::before {
+        min-width: 2.8rem;
+        min-height: 0.1rem;
+      }
+      &::after {
+        min-width: 1.3rem;
+        min-height: 0.1rem;
+      }
+      span {
+        font-size: 3.3rem;
+      }
+    }
   }
 `;
 
