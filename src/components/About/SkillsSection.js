@@ -55,6 +55,11 @@ const SkillsStyled = styled.section`
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 0.5em;
+
+    @media screen and (max-width: 480px) {
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 `;
 export default SkillsSection;

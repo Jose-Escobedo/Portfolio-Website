@@ -7,7 +7,9 @@ const ProjectSection = () => {
     <ProjectSectionStyled>
       <div className="project-container">
         <div className="project-img-border">
-          <img src={Phonify} />
+          <a href="https://phonify-frontend.herokuapp.com/">
+            <img src={Phonify} />
+          </a>
         </div>
         <div className="project-desc-container">
           <h2>Phonify</h2>
@@ -17,7 +19,7 @@ const ProjectSection = () => {
             Components, PostgreSQL,<br></br>and Ruby on Rails.
           </p>
           <button>
-            <a href="https://www.w3schools.com/">Live App</a>
+            <a href="https://phonify-frontend.herokuapp.com/">Live App</a>
           </button>
           <button>
             <a href="https://github.com/Jose-Escobedo/phonify-frontend/">

@@ -48,16 +48,27 @@ const ImageSectionStyled = styled.div`
   width: 100%;
   justify-content: center;
 
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
+
   .left-content {
     width: 50%;
     img {
       width: 95%;
-      height: 90%;
+      min-height: 90%;
       object-fit: cover;
+    }
+    @media screen and (max-width: 480px) {
+      width: 100%;
+      img {
+        width: 100%;
+      }
     }
   }
   .right-content {
     width: 50%;
+
     h4 {
       font-size: 2rem;
       color: var(--white-color);
@@ -88,6 +99,10 @@ const ImageSectionStyled = styled.div`
       .info p {
         color: var(--white-color);
       }
+    }
+    @media screen and (max-width: 480px) {
+      width: 100%;
+      text-align: center;
     }
   }
 `;

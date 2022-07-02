@@ -47,9 +47,18 @@ const ServicesSectionStyled = styled.section`
     margin-top: 5rem;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      grid-gap: 1.3rem;
+    }
   }
   .mid-card {
     margin: 0 1.2rem;
+
+    @media screen and (max-width: 480px) {
+      margin: 0;
+    }
   }
 `;
 
