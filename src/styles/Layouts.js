@@ -4,12 +4,11 @@ export const MainLayout = styled.div`
   padding: 7rem;
 
   @media screen and (max-width: 480px) {
-    padding: 1rem;
+    padding: 2.5rem;
     width: 100%;
     border: 1px solid red;
   }
   @media screen and (max-width: 760px) {
-    padding: 5rem;
     width: 100%;
   }
 `;

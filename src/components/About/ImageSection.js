@@ -198,25 +198,6 @@ const ImageSectionStyled = styled.div`
         align-items: center;
       }
     }
-
-    @media screen and (max-width: 440px) {
-      .info-title p {
-        font-size: 0.5rem;
-        line-height: 1rem;
-      }
-      .info p {
-        font-size: 0.5rem;
-        line-height: 1rem;
-      }
-    }
-    @media screen and (max-width: 420px) {
-      .info-title p {
-        font-size: 0.4rem;
-      }
-      .info p {
-        font-size: 0.4rem;
-      }
-    }
   }
 `;
 
