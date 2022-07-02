@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HomePageStyled = styled.header`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 
   .home {
@@ -10,7 +10,7 @@ export const HomePageStyled = styled.header`
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
   }
 
   .typography {
