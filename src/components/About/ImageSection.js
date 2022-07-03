@@ -171,7 +171,6 @@ const ImageSectionStyled = styled.div`
     }
 
     @media screen and (max-width: 480px) {
-      width: 100%;
       text-align: center;
       margin-top: 1rem;
       .paragraph {
@@ -181,11 +180,12 @@ const ImageSectionStyled = styled.div`
       p {
         font-size: 1.1rem;
       }
+
       .info-title p {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
       }
       .info p {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
       }
       h4 {
         font-size: 1.5rem;
@@ -196,6 +196,7 @@ const ImageSectionStyled = styled.div`
       .about-info {
         justify-content: center;
         align-items: center;
+        width: 100%;
       }
     }
   }
