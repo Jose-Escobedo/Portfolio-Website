@@ -305,9 +305,6 @@ const ContactFormStyled = styled.div`
     padding: 0;
     display: flex;
     justify-content: space-evenly;
-    @media screen and (max-width: 410px) {
-      font-size: 15px;
-    }
   }
 
   .social-media-list li a {
@@ -326,6 +323,10 @@ const ContactFormStyled = styled.div`
     background-color: rgb(27, 27, 27);
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    @media screen and (max-width: 410px) {
+      min-height: 55px;
+      min-width: 55px;
+    }
   }
 
   .social-media-list li:after {
