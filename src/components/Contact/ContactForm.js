@@ -116,7 +116,7 @@ const ContactFormStyled = styled.div`
     background: linear-gradient(#010106, var(--background-dark-grey))
       padding-box;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 1100px) {
       flex-direction: column;
       width: 100%;
       padding-bottom: 3em;
@@ -130,9 +130,9 @@ const ContactFormStyled = styled.div`
     display: flex;
     flex-direction: column;
     padding: 2em;
-    @media screen and (max-width: 480px) {
-      padding: 1em;
+    @media screen and (max-width: 1100px) {
       width: 100%;
+      padding: 0.5em;
     }
     @media screen and (max-width: 410px) {
       padding: 0.4em;
@@ -149,7 +149,7 @@ const ContactFormStyled = styled.div`
     border: none;
     border: 1px solid var(--white-color);
     padding: 0.5em 0.5em;
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 760px) {
       font-size: 0.9rem;
     }
     @media screen and (max-width: 435px) {
@@ -166,9 +166,10 @@ const ContactFormStyled = styled.div`
     letter-spacing: 1px;
     border: 1px solid var(--white-color);
     padding: 0.5em 0.5em;
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 760px) {
       font-size: 0.9rem;
     }
+
     @media screen and (max-width: 435px) {
       font-size: 0.7rem;
     }
@@ -217,14 +218,16 @@ const ContactFormStyled = styled.div`
     justify-content: space-between;
     flex-direction: column;
     padding: 2em;
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 1100px) {
       font-size: 0.5rem;
       padding: 1em;
       width: 100%;
+      align-items: center;
       span {
         max-width: 100%;
       }
     }
+
     @media screen and (max-width: 435px) {
       font-size: 0.3rem;
     }
@@ -248,24 +251,27 @@ const ContactFormStyled = styled.div`
       margin-bottom: 1.6em;
       line-height: 1em;
       font-size: 1rem;
+      a {
+        font-size: 0.7rem;
+      }
     }
   }
 
   .contact-text {
     letter-spacing: 1.9px;
-    font-size: 0.5rem;
+
     color: var(--white-color);
     text-decoration: none;
     margin-left: 1.5em;
-    @media screen and (max-width: 435px) {
-      font-size: 0.8rem;
-    }
   }
 
   .contact-list span {
     font-size: 0.8rem;
-    @media screen and (max-width: 435px) {
+    @media screen and (max-width: 480px) {
       font-size: 0.7rem;
+    }
+    @media screen and (max-width: 435px) {
+      font-size: 0.5rem;
     }
     @media screen and (max-width: 410px) {
       font-size: 0.6rem;
@@ -275,8 +281,9 @@ const ContactFormStyled = styled.div`
   .contact-text a {
     text-decoration: none;
     transition-duration: 0.2s;
+
     @media screen and (max-width: 435px) {
-      font-size: 0.8rem;
+      font-size: 0.5rem;
     }
     @media screen and (max-width: 410px) {
       font-size: 0.6rem;
@@ -298,6 +305,9 @@ const ContactFormStyled = styled.div`
     padding: 0;
     display: flex;
     justify-content: space-evenly;
+    @media screen and (max-width: 410px) {
+      font-size: 15px;
+    }
   }
 
   .social-media-list li a {
@@ -351,6 +361,7 @@ const ContactFormStyled = styled.div`
     color: var(--white-color);
     letter-spacing: 1px;
     text-align: center;
+    margin-top: 1.2rem;
     @media screen and (max-width: 480px) {
       margin-top: 1rem;
     }
