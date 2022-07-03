@@ -6,7 +6,7 @@ export const SidebarStyled = styled.div`
   position: fixed;
   top: 25%;
   z-index: 100;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     width: 100vw;
     top: 80%;
     position: fixed;

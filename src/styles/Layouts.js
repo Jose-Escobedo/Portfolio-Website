@@ -1,15 +1,11 @@
 import styled from "styled-components";
 
 export const MainLayout = styled.div`
-  padding: 7rem;
+  padding: 5em;
 
-  @media screen and (max-width: 480px) {
-    padding: 2rem;
+  @media screen and (max-width: 600px) {
+    padding: 2em;
     width: 100%;
-  }
-  @media screen and (max-width: 760px) {
-    width: 100%;
-    padding: 4rem;
   }
 `;
 
