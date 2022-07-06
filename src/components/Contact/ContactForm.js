@@ -35,7 +35,6 @@ const ContactForm = ({ addNewFormData }) => {
       ...newFormData,
       name: e.target.value,
     });
-    console.log(newFormData);
   };
 
   const handleEmailChange = (e) => {
@@ -43,7 +42,6 @@ const ContactForm = ({ addNewFormData }) => {
       ...newFormData,
       email: e.target.value,
     });
-    console.log(newFormData);
   };
 
   const handleMessageChange = (e) => {
@@ -51,7 +49,6 @@ const ContactForm = ({ addNewFormData }) => {
       ...newFormData,
       message: e.target.value,
     });
-    console.log(newFormData);
   };
 
   const handleFormSubmit = (e) => {
