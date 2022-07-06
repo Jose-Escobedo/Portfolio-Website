@@ -7,8 +7,10 @@ import ProjectsPage from "./Pages/ProjectsPage";
 import ContactPage from "./Pages/ContactPage";
 import { Routes, Route } from "react-router-dom";
 import Particle from "./components/Particle";
+import emailjs from "emailjs-com";
 
 function App() {
+  const addNewFormData = () => {};
   return (
     <StyledApp>
       <Particle />
@@ -18,7 +20,10 @@ function App() {
           <Route path="/" exact element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/Contact" element={<ContactPage />} />
+          <Route
+            path="/Contact"
+            element={<ContactPage addNewFormData={addNewFormData} />}
+          />
         </Routes>
       </MainContentStyled>
     </StyledApp>

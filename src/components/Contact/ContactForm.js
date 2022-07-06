@@ -8,24 +8,89 @@ import {
   FaMedium,
   FaPaperPlane,
 } from "react-icons/fa";
+import { useState, useRef } from "react";
 
-const ContactForm = () => {
+import emailjs from "@emailjs/browser";
+
+const ContactForm = ({ addNewFormData }) => {
   const githubLink = "https://github.com/Jose-Escobedo";
   const linkedInLink = "https://www.linkedin.com/in/jose-escobedo-89b943232/";
   const mediumLink = "https://medium.com/@escobedo.jose";
   const linkClick = (url) => {
     window.location.assign(url);
   };
+
+  const blankForm = {
+    name: "",
+    email: "",
+    message: "",
+  };
+
+  const [newFormData, setFormData] = useState(blankForm);
+
+  const { name, email, message } = newFormData;
+
+  const handleNameChange = (e) => {
+    setFormData({
+      ...newFormData,
+      name: e.target.value,
+    });
+    console.log(newFormData);
+  };
+
+  const handleEmailChange = (e) => {
+    setFormData({
+      ...newFormData,
+      email: e.target.value,
+    });
+    console.log(newFormData);
+  };
+
+  const handleMessageChange = (e) => {
+    setFormData({
+      ...newFormData,
+      message: e.target.value,
+    });
+    console.log(newFormData);
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .send(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        newFormData,
+        process.env.REACT_APP_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    setFormData(blankForm);
+  };
+
   return (
     <ContactFormStyled>
       <div className="contact-wrapper">
-        <form id="contact-form" className="form-horizontal">
+        <form
+          id="contact-form"
+          className="form-horizontal"
+          onSubmit={handleFormSubmit}
+        >
           <div className="form-group">
             <input
               type="text"
               id="name"
               placeholder="NAME"
               name="name"
+              value={newFormData.name}
+              onChange={handleNameChange}
               required
             />
             <input
@@ -33,12 +98,16 @@ const ContactForm = () => {
               id="email"
               placeholder="EMAIL"
               name="email"
+              value={newFormData.email}
+              onChange={handleEmailChange}
               required
             />
             <textarea
               rows="6"
               placeholder="MESSAGE"
               name="message"
+              value={newFormData.message}
+              onChange={handleMessageChange}
               required
             ></textarea>
             <button
