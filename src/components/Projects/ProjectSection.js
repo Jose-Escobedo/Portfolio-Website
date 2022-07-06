@@ -47,6 +47,11 @@ const ProjectSectionStyled = styled.div`
       width: 95%;
       object-fit: cover;
     }
+
+    @media screen and (max-width: 1100px) {
+      flex-direction: column;
+      padding: 2em 0;
+    }
   }
   .project-img-border {
     width: 70%;
@@ -60,30 +65,44 @@ const ProjectSectionStyled = styled.div`
     flex-direction: column;
     z-index: 99;
     width: 45%;
+    @media screen and (max-width: 1100px) {
+      width: 90%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1em;
+    }
+
     h2 {
-      font-size: 2em;
+      font-size: 2rem;
       font-family: Montserrat, sans-serif;
       font-weight: 300;
       color: var(--white-color);
+      @media screen and (max-width: 670px) {
+        font-size: 1.7rem;
+      }
     }
     h3 {
-      font-size: 1em;
+      font-size: 1rem;
       font-family: Montserrat, sans-serif;
       font-weight: 300;
       color: var(--primary-color);
       padding-bottom: 1.2em;
     }
     p {
-      font-size: 0.85em;
+      font-size: 0.85rem;
       font-family: Montserrat, sans-serif;
       font-weight: 300;
       line-height: 1.5em;
       color: var(--white-color);
       padding-bottom: 1.2em;
+      @media screen and (max-width: 670px) {
+        font-size: 0.75rem;
+      }
     }
     button {
       padding: 0.5em 0.5em;
-      font-size: 0.8em;
+      font-size: 0.8rem;
       width: 30%;
       border: none;
       color: var(--white-color);
@@ -93,6 +112,18 @@ const ProjectSectionStyled = styled.div`
       text-transform: uppercase;
       position: relative;
       cursor: pointer;
+      @media screen and (max-width: 1200px) {
+        font-size: 0.5rem;
+        width: 40%;
+      }
+      @media screen and (max-width: 1100px) {
+        font-size: 0.5rem;
+        width: 30%;
+      }
+      @media screen and (max-width: 670px) {
+        width: 40%;
+        font-size: 0.45rem;
+      }
     }
 
     button::before {
