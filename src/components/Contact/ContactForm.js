@@ -60,7 +60,7 @@ const ContactForm = ({ addNewFormData }) => {
       Password: `${process.env.REACT_APP_MAILER_PASSWORD}`,
       To: `${process.env.REACT_APP_MAILER_EMAIL}`,
       From: `${process.env.REACT_APP_MAILER_EMAIL}`,
-      Subject: `Message from: ${newFormData.name}`,
+      Subject: `Message from ${newFormData.name}`,
       Body: `Email: ${newFormData.email} Message: ${newFormData.message}`,
     }).then((message) => alert(message));
     setFormData(blankForm);
