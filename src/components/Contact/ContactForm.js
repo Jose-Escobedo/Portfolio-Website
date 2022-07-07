@@ -54,15 +54,21 @@ const ContactForm = ({ addNewFormData }) => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    window.Email.send({
-      Host: "smtp.elasticemail.com",
-      Username: `${process.env.REACT_APP_MAILER_EMAIL}`,
-      Password: `${process.env.REACT_APP_MAILER_PASSWORD}`,
-      To: `${process.env.REACT_APP_MAILER_EMAIL}`,
-      From: `${process.env.REACT_APP_MAILER_EMAIL}`,
-      Subject: `Message from ${newFormData.name}`,
-      Body: `Email: ${newFormData.email} Message: ${newFormData.message}`,
-    }).then((message) => alert(message));
+    emailjs
+      .send(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        newFormData,
+        process.env.REACT_APP_PUBLIC_KEY
+      )
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function (error) {
+          console.log("FAILED...", error);
+        }
+      );
     setFormData(blankForm);
   };
 
