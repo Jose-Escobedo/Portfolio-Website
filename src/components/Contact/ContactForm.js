@@ -53,22 +53,16 @@ const ContactForm = ({ addNewFormData }) => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    console.log(process.env.REACT_APP_SERVICE_ID);
-    emailjs
-      .send(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        newFormData,
-        process.env.REACT_APP_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+
+    window.Email.send({
+      Host: "smtp.gmail.com",
+      Username: `${process.env.REACT_APP_MAILER_EMAIL}`,
+      Password: `${process.env.REACT_APP_MAILER_PASSWORD}`,
+      To: `${process.env.REACT_APP_MAILER_EMAIL}`,
+      From: `${process.env.REACT_APP_MAILER_EMAIL}`,
+      Subject: `Message from: ${newFormData.name}`,
+      Body: `Email: ${newFormData.email} Message: ${newFormData.message}`,
+    }).then((message) => alert(message));
     setFormData(blankForm);
   };
 
