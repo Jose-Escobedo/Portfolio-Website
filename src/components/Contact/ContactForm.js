@@ -55,7 +55,7 @@ const ContactForm = ({ addNewFormData }) => {
     e.preventDefault();
 
     window.Email.send({
-      Host: "smtp.gmail.com",
+      Host: "smtp.elasticemail.com",
       Username: `${process.env.REACT_APP_MAILER_EMAIL}`,
       Password: `${process.env.REACT_APP_MAILER_PASSWORD}`,
       To: `${process.env.REACT_APP_MAILER_EMAIL}`,
