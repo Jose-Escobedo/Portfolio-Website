@@ -53,7 +53,7 @@ const ContactForm = ({ addNewFormData }) => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-
+    console.log(process.env.REACT_APP_SERVICE_ID);
     emailjs
       .send(
         process.env.REACT_APP_SERVICE_ID,
