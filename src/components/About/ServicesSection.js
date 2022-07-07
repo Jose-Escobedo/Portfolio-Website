@@ -33,7 +33,7 @@ const ServicesSection = () => {
             image={backend}
             title={"Backend"}
             paragraph={
-              "With my knowledge in Ruby, I can create the desired backend with Ruby on Rails."
+              "With my knowledge in Ruby, I can create a functional backend with Ruby on Rails."
             }
           />
         </div>
