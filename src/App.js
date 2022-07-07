@@ -7,7 +7,6 @@ import ProjectsPage from "./Pages/ProjectsPage";
 import ContactPage from "./Pages/ContactPage";
 import { Routes, Route } from "react-router-dom";
 import Particle from "./components/Particle";
-import emailjs from "emailjs-com";
 
 function App() {
   const addNewFormData = () => {};
