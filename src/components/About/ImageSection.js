@@ -9,7 +9,7 @@ const ImageSection = () => {
       <div className="left-content">
         <img
           src={
-            "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/IMG_3859.JPG?alt=media&token=d2273e46-5190-4e69-bfc8-68a275042a45&_gl=1*xyvnk4*_ga*MjAxNTYwMjQ1LjE2ODU3NDY0MjU.*_ga_CW55HF8NVT*MTY4NTc0NjQyNS4xLjEuMTY4NTc0NjQ5Ny4wLjAuMA.."
+            "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/About-ProfilePicture.JPG?alt=media&token=32ee499a-d0c9-4db1-98d7-07b7b221cfad&_gl=1*1awf9bm*_ga*MjAxNTYwMjQ1LjE2ODU3NDY0MjU.*_ga_CW55HF8NVT*MTY4NTc0NjQyNS4xLjEuMTY4NTc0NjkwOC4wLjAuMA.."
           }
           alt="about"
         />
