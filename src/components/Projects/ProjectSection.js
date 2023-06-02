@@ -65,6 +65,7 @@ const ProjectSectionStyled = styled.div`
     margin-top: 5rem;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     padding: 4em 2em;
     position: relative;
@@ -74,8 +75,7 @@ const ProjectSectionStyled = styled.div`
     }
 
     @media screen and (max-width: 1100px) {
-      flex-direction: column;
-      padding: 2em 0;
+      padding: 2em;
     }
   }
   .project-img-border {
@@ -95,7 +95,7 @@ const ProjectSectionStyled = styled.div`
       text-align: center;
       justify-content: center;
       align-items: center;
-      margin-top: 1em;
+      padding: 2em;
     }
 
     h2 {
