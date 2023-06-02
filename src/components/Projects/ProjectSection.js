@@ -27,6 +27,31 @@ const ProjectSection = () => {
             </a>
           </button>
         </div>
+        <div className="project-img-border">
+          <a href="https://www.tortasmexico-studiocity.com/">
+            <img
+              src={
+                "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/Screenshot%202023-06-02%20160504.png?alt=media&token=5602e1d3-d938-461c-bada-20fda88d814f&_gl=1*1gwnjhk*_ga*MjAxNTYwMjQ1LjE2ODU3NDY0MjU.*_ga_CW55HF8NVT*MTY4NTc0NjQyNS4xLjEuMTY4NTc0NzM1MC4wLjAuMA.."
+              }
+            />
+          </a>
+        </div>
+        <div className="project-desc-container">
+          <h2>Tortas Mexico Studio City</h2>
+          <h3>Restaurant Delivery Website</h3>
+          <p>
+            MERN stack Restaurant application built with React, Styled
+            Components, Stripe, Drive API,<br></br>and Redux.
+          </p>
+          <button>
+            <a href="https://www.tortasmexico-studiocity.com/">Live App</a>
+          </button>
+          <button>
+            <a href="https://github.com/Jose-Escobedo/MERN-Tortas-Frontend">
+              Github
+            </a>
+          </button>
+        </div>
       </div>
     </ProjectSectionStyled>
   );
