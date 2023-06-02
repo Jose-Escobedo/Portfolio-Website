@@ -6,51 +6,55 @@ const ProjectSection = () => {
   return (
     <ProjectSectionStyled>
       <div className="project-container">
-        <div className="project-img-border">
-          <a href="https://phonify-frontend.herokuapp.com/">
-            <img src={Phonify} />
-          </a>
-        </div>
-        <div className="project-desc-container">
-          <h2>Phonify</h2>
-          <h3>E-commerce App</h3>
-          <p>
-            Full stack e-commerce application built with React, Styled
-            Components, PostgreSQL,<br></br>and Ruby on Rails.
-          </p>
-          <button>
-            <a href="https://phonify-frontend.herokuapp.com/">Live App</a>
-          </button>
-          <button>
-            <a href="https://github.com/Jose-Escobedo/phonify-frontend/">
-              Github
+        <div className="project-wrapper">
+          <div className="project-img-border">
+            <a href="https://phonify-frontend.herokuapp.com/">
+              <img src={Phonify} />
             </a>
-          </button>
+          </div>
+          <div className="project-desc-container">
+            <h2>Phonify</h2>
+            <h3>E-commerce App</h3>
+            <p>
+              Full stack e-commerce application built with React, Styled
+              Components, PostgreSQL,<br></br>and Ruby on Rails.
+            </p>
+            <button>
+              <a href="https://phonify-frontend.herokuapp.com/">Live App</a>
+            </button>
+            <button>
+              <a href="https://github.com/Jose-Escobedo/phonify-frontend/">
+                Github
+              </a>
+            </button>
+          </div>
         </div>
-        <div className="project-img-border">
-          <a href="https://www.tortasmexico-studiocity.com/">
-            <img
-              src={
-                "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/Screenshot%202023-06-02%20160504.png?alt=media&token=5602e1d3-d938-461c-bada-20fda88d814f&_gl=1*1gwnjhk*_ga*MjAxNTYwMjQ1LjE2ODU3NDY0MjU.*_ga_CW55HF8NVT*MTY4NTc0NjQyNS4xLjEuMTY4NTc0NzM1MC4wLjAuMA.."
-              }
-            />
-          </a>
-        </div>
-        <div className="project-desc-container">
-          <h2>Tortas Mexico Studio City</h2>
-          <h3>Restaurant Delivery Website</h3>
-          <p>
-            MERN stack Restaurant application built with React, Styled
-            Components, Stripe, Drive API,<br></br>and Redux.
-          </p>
-          <button>
-            <a href="https://www.tortasmexico-studiocity.com/">Live App</a>
-          </button>
-          <button>
-            <a href="https://github.com/Jose-Escobedo/MERN-Tortas-Frontend">
-              Github
+        <div className="project-wrapper">
+          <div className="project-img-border">
+            <a href="https://www.tortasmexico-studiocity.com/">
+              <img
+                src={
+                  "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/Screenshot%202023-06-02%20160504.png?alt=media&token=5602e1d3-d938-461c-bada-20fda88d814f&_gl=1*1gwnjhk*_ga*MjAxNTYwMjQ1LjE2ODU3NDY0MjU.*_ga_CW55HF8NVT*MTY4NTc0NjQyNS4xLjEuMTY4NTc0NzM1MC4wLjAuMA.."
+                }
+              />
             </a>
-          </button>
+          </div>
+          <div className="project-desc-container">
+            <h2>Tortas Mexico Studio City</h2>
+            <h3>Restaurant Delivery Website</h3>
+            <p>
+              MERN stack Restaurant application built with React, Styled
+              Components, Stripe, Drive API,<br></br>and Redux.
+            </p>
+            <button>
+              <a href="https://www.tortasmexico-studiocity.com/">Live App</a>
+            </button>
+            <button>
+              <a href="https://github.com/Jose-Escobedo/MERN-Tortas-Frontend">
+                Github
+              </a>
+            </button>
+          </div>
         </div>
       </div>
     </ProjectSectionStyled>
@@ -64,8 +68,8 @@ const ProjectSectionStyled = styled.div`
       padding-box;
     margin-top: 5rem;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     padding: 4em 2em;
     position: relative;
@@ -78,11 +82,25 @@ const ProjectSectionStyled = styled.div`
       padding: 2em;
     }
   }
+
+  .project-wrapper {
+    display: flex;
+    padding: 10px;
+    margin-top: 20px;
+    @media screen and (max-width: 1100px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
   .project-img-border {
     width: 70%;
     transition: transform 0.5s;
     &:hover {
       transform: scale(0.95);
+    }
+    @media screen and (max-width: 767px) {
+      width: 100%;
     }
   }
   .project-desc-container {
@@ -97,6 +115,12 @@ const ProjectSectionStyled = styled.div`
       align-items: center;
       padding: 2em;
     }
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 500px) {
+      padding: 0.5em;
+    }
 
     h2 {
       font-size: 2rem;
@@ -105,6 +129,9 @@ const ProjectSectionStyled = styled.div`
       color: var(--white-color);
       @media screen and (max-width: 670px) {
         font-size: 1.7rem;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 1.2rem;
       }
     }
     h3 {
@@ -123,6 +150,9 @@ const ProjectSectionStyled = styled.div`
       padding-bottom: 1.2em;
       @media screen and (max-width: 670px) {
         font-size: 0.75rem;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 0.55rem;
       }
     }
     button {
@@ -145,9 +175,11 @@ const ProjectSectionStyled = styled.div`
         font-size: 0.5rem;
         width: 30%;
       }
-      @media screen and (max-width: 670px) {
-        width: 40%;
-        font-size: 0.45rem;
+      @media screen and (max-width: 767px) {
+        width: 70%;
+        a {
+          font-size: 0.8rem;
+        }
       }
     }
 
