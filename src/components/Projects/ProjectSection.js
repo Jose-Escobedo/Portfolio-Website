@@ -8,29 +8,6 @@ const ProjectSection = () => {
       <div className="project-container">
         <div className="project-wrapper">
           <div className="project-img-border">
-            <a href="https://phonify-frontend.herokuapp.com/">
-              <img src={Phonify} />
-            </a>
-          </div>
-          <div className="project-desc-container">
-            <h2>Phonify</h2>
-            <h3>E-commerce App</h3>
-            <p>
-              Full stack e-commerce application built with React, Styled
-              Components, PostgreSQL,<br></br>and Ruby on Rails.
-            </p>
-            <button>
-              <a href="https://phonify-frontend.herokuapp.com/">Live App</a>
-            </button>
-            <button>
-              <a href="https://github.com/Jose-Escobedo/phonify-frontend/">
-                Github
-              </a>
-            </button>
-          </div>
-        </div>
-        <div className="project-wrapper">
-          <div className="project-img-border">
             <a href="https://www.tortasmexico-studiocity.com/">
               <img
                 src={
@@ -51,6 +28,29 @@ const ProjectSection = () => {
             </button>
             <button>
               <a href="https://github.com/Jose-Escobedo/MERN-Tortas-Frontend">
+                Github
+              </a>
+            </button>
+          </div>
+        </div>
+        <div className="project-wrapper">
+          <div className="project-img-border">
+            <a href="https://phonify-frontend.herokuapp.com/">
+              <img src={Phonify} />
+            </a>
+          </div>
+          <div className="project-desc-container">
+            <h2>Phonify</h2>
+            <h3>E-commerce App</h3>
+            <p>
+              Full stack e-commerce application built with React, Styled
+              Components, PostgreSQL,<br></br>and Ruby on Rails.
+            </p>
+            <button>
+              <a href="https://phonify-frontend.herokuapp.com/">Live App</a>
+            </button>
+            <button>
+              <a href="https://github.com/Jose-Escobedo/phonify-frontend/">
                 Github
               </a>
             </button>
