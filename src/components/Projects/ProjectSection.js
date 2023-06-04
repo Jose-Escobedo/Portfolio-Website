@@ -10,6 +10,7 @@ const ProjectSection = () => {
           <div className="project-img-border">
             <a href="https://www.tortasmexico-studiocity.com/">
               <img
+                alt="Image featuring my home page for my restaurant website"
                 src={
                   "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/Screenshot%202023-06-02%20160504.png?alt=media&token=5602e1d3-d938-461c-bada-20fda88d814f&_gl=1*1gwnjhk*_ga*MjAxNTYwMjQ1LjE2ODU3NDY0MjU.*_ga_CW55HF8NVT*MTY4NTc0NjQyNS4xLjEuMTY4NTc0NzM1MC4wLjAuMA.."
                 }
@@ -36,7 +37,10 @@ const ProjectSection = () => {
         <div className="project-wrapper">
           <div className="project-img-border">
             <a href="https://phonify-frontend.herokuapp.com/">
-              <img src={Phonify} />
+              <img
+                src={Phonify}
+                alt="screenshot showing my phonify ecommerce hero section"
+              />
             </a>
           </div>
           <div className="project-desc-container">
@@ -51,6 +55,37 @@ const ProjectSection = () => {
             </button>
             <button>
               <a href="https://github.com/Jose-Escobedo/phonify-frontend/">
+                Github
+              </a>
+            </button>
+          </div>
+        </div>
+        <div className="project-wrapper">
+          <div className="project-img-border">
+            <a href="https://tourmaline-bublanina-47cd6b.netlify.app/">
+              <img
+                alt="gatbsy website screenshot showing my photography gallery"
+                src={
+                  "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/Screenshot%202023-06-03%20220323.png?alt=media&token=ea562710-62e8-4cd2-8298-a543eebb8bdc&_gl=1*1dy9vd5*_ga*MjAxNTYwMjQ1LjE2ODU3NDY0MjU.*_ga_CW55HF8NVT*MTY4NTg1NTA0Mi40LjEuMTY4NTg1NTA3My4wLjAuMA.."
+                }
+              />
+            </a>
+          </div>
+          <div className="project-desc-container">
+            <h2>Escobedo Photography</h2>
+            <h3>Gatsby Photography Website</h3>
+            <p>
+              Gatsby photography website built with ReactJS, Styled Components,
+              <br></br>
+              and GraphQl.
+            </p>
+            <button>
+              <a href="https://tourmaline-bublanina-47cd6b.netlify.app/">
+                Live App
+              </a>
+            </button>
+            <button>
+              <a href="https://github.com/Jose-Escobedo/Gatsby-Photography">
                 Github
               </a>
             </button>
