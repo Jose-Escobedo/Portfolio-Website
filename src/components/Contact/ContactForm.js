@@ -158,7 +158,7 @@ const ContactForm = ({ addNewFormData }) => {
             </ul>
           </div>
 
-          <div className="copyright">Jose Escobedo &copy;2022</div>
+          <div className="copyright"> Jose Escobedo &copy; {new Date().getFullYear()}</div>
         </div>
       </div>
     </ContactFormStyled>

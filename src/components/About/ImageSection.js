@@ -36,7 +36,7 @@ const ImageSection = () => {
           </div>
           <div className="info">
             <p>: Jose Escobedo</p>
-            <p>: 23</p>
+            <p>: 24</p>
             <p>: Spanish, English</p>
             <p>: California, United States</p>
           </div>
