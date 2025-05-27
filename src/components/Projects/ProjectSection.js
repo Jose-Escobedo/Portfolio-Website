@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Phonify from "../../img/phonify.png";
+import JewelDistro from "../../img/jeweldistro.png";
 
 const ProjectSection = () => {
   return (
@@ -36,25 +36,25 @@ const ProjectSection = () => {
         </div>
         <div className="project-wrapper">
           <div className="project-img-border">
-            <a href="https://phonify-frontend.herokuapp.com/">
+            <a href="#">
               <img
-                src={Phonify}
-                alt="screenshot showing my phonify ecommerce hero section"
+                src={JewelDistro}
+                alt="screenshot showing my Pod Juice/Jewel Distribution ecommerce section"
               />
             </a>
           </div>
           <div className="project-desc-container">
-            <h2>Phonify</h2>
+            <h2>Jewel Distribution</h2>
             <h3>E-commerce App</h3>
             <p>
-              Full stack e-commerce application built with React, Styled
-              Components, PostgreSQL,<br></br>and Ruby on Rails.
+            Full stack e-commerce website developed using PHP, HTML, JavaScript, jQuery,
+            and CSS, with a custom content management system tailored to client needs.
             </p>
             <button>
-              <a href="https://phonify-frontend.herokuapp.com/">Live App</a>
+              <a href="#">Live App</a>
             </button>
             <button>
-              <a href="https://github.com/Jose-Escobedo/phonify-frontend/">
+              <a href="#">
                 Github
               </a>
             </button>
