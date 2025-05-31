@@ -41,12 +41,12 @@ const ImageSection = () => {
             <p>: California, United States</p>
           </div>
         </div>
-        <a href="https://docs.google.com/document/d/e/2PACX-1vTSeYaC7IAZsum8xHuSnDAcS6Q7j621Q6OTMXlDxDeN0LJSQBQf1SgRmDg-WkgePAKdtkutMzrI2dTm/pub">
-          <PrimaryButton
-            className="about-resume-btn"
-            title={"View Resume"}
-          ></PrimaryButton>
-        </a>
+  <a href="/resume.docx" target="_blank" rel="noopener noreferrer">
+  <PrimaryButton
+    className="about-resume-btn"
+    title={"View Resume"}
+  />
+</a>
       </div>
     </ImageSectionStyled>
   );
