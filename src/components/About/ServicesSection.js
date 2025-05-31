@@ -4,7 +4,7 @@ import { InnerLayout } from "../../styles/Layouts";
 import Title from "../Main/Title";
 import ServiceCard from "./ServiceCard";
 import frontend from "../../img/frontend.svg";
-import backend from "../../img/backend.svg";
+import backend from "../../img/nodejs.svg";
 import design from "../../img/design.svg";
 
 const ServicesSection = () => {
@@ -17,7 +17,7 @@ const ServicesSection = () => {
             image={design}
             title={"Design"}
             paragraph={
-              "Along with my Adobe Photoshop skills, I am able to create and design in Figma."
+              "I use Figma and Adobe Photoshop to design clean, modern user interfaces tailored to your vision."
             }
           />
           <div className="mid-card">
@@ -25,7 +25,7 @@ const ServicesSection = () => {
               image={frontend}
               title={"Frontend"}
               paragraph={
-                "My experience with React JS allows me to bring beautiful user interfaces to life."
+                "I build responsive and engaging frontends using React.js, bringing designs to life across all devices."
               }
             />
           </div>
@@ -33,7 +33,7 @@ const ServicesSection = () => {
             image={backend}
             title={"Backend"}
             paragraph={
-              "With my knowledge in Ruby, I can create a functional backend with Ruby on Rails."
+               "I leverage Node.js to create fast and secure backend services tailored to your app’s needs."
             }
           />
         </div>

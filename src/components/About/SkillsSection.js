@@ -8,10 +8,10 @@ import HTML from "../../img/html.svg";
 import CSS from "../../img/css.svg";
 import JAVASCRIPT from "../../img/javascript.svg";
 import REACT from "../../img/frontend.svg";
-import RUBY from "../../img/backend.svg";
+import NODEJS from "../../img/nodejs.svg";
 import RAILS from "../../img/rails.svg";
 import POSTGRESQL from "../../img/postgresql.svg";
-import STYLEDCOMPONENTS from "../../img/styled-components.svg";
+import MONGODB from "../../img/mongodb.svg";
 import PHOTOSHOP from "../../img/photoshop.svg";
 import FIGMA from "../../img/design.svg";
 import GATSBY from "../../img/gatsby.svg";
@@ -23,10 +23,10 @@ const SkillsSection = () => {
     { name: "CSS", img: CSS },
     { name: "JAVASCRIPT", img: JAVASCRIPT },
     { name: "REACT", img: REACT },
-    { name: "RUBY", img: RUBY },
+    { name: "NODEJS", img: NODEJS },
     { name: "RAILS", img: RAILS },
     { name: "POSTGRESQL", img: POSTGRESQL },
-    { name: "STYLED COMPONENTS", img: STYLEDCOMPONENTS },
+    { name: "MONGODB", img: MONGODB },
     { name: "ADOBE PHOTOSHOP", img: PHOTOSHOP },
     { name: "FIGMA", img: FIGMA },
     { name: "GATSBY", img: GATSBY },
