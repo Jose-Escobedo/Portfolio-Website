@@ -25,7 +25,7 @@ const ServicesSection = () => {
               image={frontend}
               title={"Frontend"}
               paragraph={
-                "I build responsive and engaging frontends using React.js, bringing designs to life across all devices."
+                "I build fast, responsive frontends with React.js and Next.js, bringing designs to life across all devices."
               }
             />
           </div>

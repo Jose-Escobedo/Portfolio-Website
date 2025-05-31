@@ -14,7 +14,7 @@ import POSTGRESQL from "../../img/postgresql.svg";
 import MONGODB from "../../img/mongodb.svg";
 import PHOTOSHOP from "../../img/photoshop.svg";
 import FIGMA from "../../img/design.svg";
-import GATSBY from "../../img/gatsby.svg";
+import NEXTJS from "../../img/nextjs.svg";
 import GIT from "../../img/git.svg";
 
 const SkillsSection = () => {
@@ -29,7 +29,7 @@ const SkillsSection = () => {
     { name: "MONGODB", img: MONGODB },
     { name: "ADOBE PHOTOSHOP", img: PHOTOSHOP },
     { name: "FIGMA", img: FIGMA },
-    { name: "GATSBY", img: GATSBY },
+    { name: "NEXTJS", img: NEXTJS },
     { name: "GIT", img: GIT },
   ]);
   return (
