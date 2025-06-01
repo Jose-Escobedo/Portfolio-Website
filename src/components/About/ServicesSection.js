@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { InnerLayout } from "../../styles/Layouts";
 import Title from "../Main/Title";
 import ServiceCard from "./ServiceCard";
-import frontend from "../../img/frontend.svg";
-import backend from "../../img/nodejs.svg";
-import design from "../../img/design.svg";
+import frontend from "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/frontend.svg?alt=media&token=e9f08151-8fea-4a95-880e-928261f2bdbc";
+import backend from "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/nodejs.svg?alt=media&token=8b7a4bae-cc68-421a-b2fb-95183208b81f";
+import design from "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/design.svg?alt=media&token=84522da9-0c58-497e-acb4-26054267a833";
 
 const ServicesSection = () => {
   return (
