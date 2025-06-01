@@ -15,12 +15,12 @@ const SkillsSection = () => {
     { name: "JAVASCRIPT", img: "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/javascript.svg?alt=media&token=97da6800-4ec5-4236-a3ab-9b8dfd329f43" },
     { name: "REACT", img: "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/frontend.svg?alt=media&token=e9f08151-8fea-4a95-880e-928261f2bdbc" },
     { name: "NODEJS", img: "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/nodejs.svg?alt=media&token=8b7a4bae-cc68-421a-b2fb-95183208b81f" },
+    { name: "NEXTJS", img: "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/nextjs.svg?alt=media&token=b0d5ec34-50d6-47b5-9777-d60afd8765f3" },
     { name: "PHP", img: "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/php.svg?alt=media&token=604c926a-afd1-4683-b110-8fbcc88d5923" },
     { name: "MONGODB", img: "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/mongodb.svg?alt=media&token=153d6676-20fc-483d-8205-3c31b04f1293" },
     { name: "POSTGRESQL", img: "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/postgresql.svg?alt=media&token=bf31aadc-6f56-4515-b965-fb2265c1bb32" },  
     { name: "ADOBE PHOTOSHOP", img: "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/photoshop.svg?alt=media&token=811e870e-8826-48d9-83fb-0b5d8c130860" },
     { name: "FIGMA", img: "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/design.svg?alt=media&token=84522da9-0c58-497e-acb4-26054267a833" },
-    { name: "NEXTJS", img: "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/nextjs.svg?alt=media&token=b0d5ec34-50d6-47b5-9777-d60afd8765f3" },
     { name: "GIT", img: "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/git.svg?alt=media&token=496a205d-3ad8-4cfd-a7dd-be5ce4f00a22" },
   ]);
   return (
