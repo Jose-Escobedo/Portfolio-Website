@@ -3,9 +3,6 @@ import styled from "styled-components";
 import { InnerLayout } from "../../styles/Layouts";
 import Title from "../Main/Title";
 import ServiceCard from "./ServiceCard";
-import frontend from "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/frontend.svg?alt=media&token=e9f08151-8fea-4a95-880e-928261f2bdbc";
-import backend from "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/nodejs.svg?alt=media&token=8b7a4bae-cc68-421a-b2fb-95183208b81f";
-import design from "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/design.svg?alt=media&token=84522da9-0c58-497e-acb4-26054267a833";
 
 const ServicesSection = () => {
   return (
@@ -14,7 +11,7 @@ const ServicesSection = () => {
         <Title title={"Services"} span={"services"} />
         <div className="services">
           <ServiceCard
-            image={design}
+            image="https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/design.svg?alt=media&token=84522da9-0c58-497e-acb4-26054267a833"
             title={"Design"}
             paragraph={
               "I use Figma and Adobe Photoshop to design clean, modern user interfaces tailored to your vision."
@@ -22,7 +19,7 @@ const ServicesSection = () => {
           />
           <div className="mid-card">
             <ServiceCard
-              image={frontend}
+              image="https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/frontend.svg?alt=media&token=e9f08151-8fea-4a95-880e-928261f2bdbc"
               title={"Frontend"}
               paragraph={
                 "I build fast, responsive frontends with React.js and Next.js, bringing designs to life across all devices."
@@ -30,7 +27,7 @@ const ServicesSection = () => {
             />
           </div>
           <ServiceCard
-            image={backend}
+            image="https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/nodejs.svg?alt=media&token=8b7a4bae-cc68-421a-b2fb-95183208b81f"
             title={"Backend"}
             paragraph={
                "I leverage Node.js to create fast and secure backend services tailored to your app’s needs."
