@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import about from "../../img/about.png";
 import PrimaryButton from "./PrimaryButton";
 
 const ImageSection = () => {
