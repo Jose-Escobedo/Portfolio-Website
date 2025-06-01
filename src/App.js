@@ -6,13 +6,13 @@ import AboutPage from "./Pages/AboutPage";
 import ProjectsPage from "./Pages/ProjectsPage";
 import ContactPage from "./Pages/ContactPage";
 import { Routes, Route } from "react-router-dom";
-// import Particle from "./components/Particle";
+import Particle from "./components/Particle";
 
 function App() {
   const addNewFormData = () => {};
   return (
     <StyledApp>
-      {/* <Particle /> */}
+      <Particle />
       <Sidebar />
       <MainContentStyled>
         <Routes>
