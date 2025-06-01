@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import JewelDistro from "../../img/jeweldistro.png";
+
 
 const ProjectSection = () => {
   return (
@@ -38,7 +38,7 @@ const ProjectSection = () => {
           <div className="project-img-border">
             <a href="#">
               <img
-                src={JewelDistro}
+                src="https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/jeweldistro.png?alt=media&token=edf8ec2a-7343-42f3-9780-9a2ab58f824c"
                 alt="screenshot showing my Pod Juice/Jewel Distribution ecommerce section"
               />
             </a>
