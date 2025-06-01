@@ -17,6 +17,8 @@ import FIGMA from "../../img/design.svg";
 import NEXTJS from "../../img/nextjs.svg";
 import GIT from "../../img/git.svg";
 
+//note
+
 const SkillsSection = () => {
   const [skills, setSkills] = useState([
     { name: "HTML", img: HTML },
