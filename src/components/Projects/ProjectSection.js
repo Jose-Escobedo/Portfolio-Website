@@ -60,6 +60,35 @@ const ProjectSection = () => {
             </button>
           </div>
         </div>
+         <div className="project-wrapper">
+          <div className="project-img-border">
+            <a href="https://sage-oak-therapy.vercel.app/">
+              <img
+                alt="nextjs therapy website"
+                src={
+                  "https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/Screenshot%202025-07-03%20133048.png?alt=media&token=4e1f352c-78de-467c-a463-00400c8faead"
+                }
+              />
+            </a>
+          </div>
+              <div className="project-desc-container">
+            <h2>Sage Oak Therapy</h2>
+            <h3>Conversion focused Therapy Site</h3>
+            <p>
+              Sage Oak Therapy website built with NextJs and TailwindCSS
+            </p>
+            <button>
+              <a href="https://sage-oak-therapy.vercel.app/">
+                Live App
+              </a>
+            </button>
+            <button>
+              <a href="https://github.com/Jose-Escobedo/sage-oak-therapy">
+                Github
+              </a>
+            </button>
+          </div>
+       </div>
         <div className="project-wrapper">
           <div className="project-img-border">
             <a href="https://tourmaline-bublanina-47cd6b.netlify.app/">
