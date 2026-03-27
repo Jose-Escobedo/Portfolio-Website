@@ -28,8 +28,10 @@ export const projects = [
     tech: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Redux'],
     image:
       'https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/Screenshot%202023-06-02%20160504.png?alt=media&token=5602e1d3-d938-461c-bada-20fda88d814f&_gl=1*1gwnjhk*_ga*MjAxNTYwMjQ1LjE2ODU3NDY0MjU.*_ga_CW55HF8NVT*MTY4NTc0NjQyNS4xLjEuMTY4NTc0NzM1MC4wLjAuMA..',
-    live: 'https://mern-tortas-frontend.vercel.app/',
+    live: null,
     github: 'https://github.com/Jose-Escobedo/MERN-Tortas-Frontend',
+    archived: true,
+    archivedNote: 'Backend no longer hosted — explore the source code below.',
   },
   {
     id: 2,

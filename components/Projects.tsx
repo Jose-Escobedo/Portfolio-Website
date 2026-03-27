@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
+import { FaGithub, FaExternalLinkAlt, FaArchive } from 'react-icons/fa'
 import { projects } from '@/lib/data'
 
 export default function Projects() {
@@ -33,22 +33,36 @@ export default function Projects() {
               >
                 {/* Image */}
                 <div
-                  className={`relative overflow-hidden rounded-2xl border border-blue-500/10 group-hover:border-blue-500/30 transition-all duration-500 ${
-                    !isEven ? 'lg:col-start-2' : ''
-                  }`}
+                  className={`relative overflow-hidden rounded-2xl border transition-all duration-500 ${
+                    project.archived
+                      ? 'border-slate-700/50 group-hover:border-slate-600/50'
+                      : 'border-blue-500/10 group-hover:border-blue-500/30'
+                  } ${!isEven ? 'lg:col-start-2' : ''}`}
                 >
                   <div className="aspect-video relative">
                     <Image
                       src={project.image}
                       alt={project.title}
                       fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      className={`object-cover transition-all duration-700 group-hover:scale-105 ${
+                        project.archived ? 'grayscale-[40%]' : ''
+                      }`}
                       sizes="(max-width: 1024px) 100vw, 50vw"
                     />
-                    {/* Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-[#080b14]/60 via-transparent to-transparent" />
-                    {/* Hover overlay with links */}
-                    <div className="absolute inset-0 bg-blue-900/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center gap-4">
+
+                    {/* Archived overlay badge on image */}
+                    {project.archived && (
+                      <div className="absolute top-3 left-3">
+                        <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-sm border border-slate-600/50 text-slate-400 text-xs font-semibold">
+                          <FaArchive className="text-[10px]" />
+                          Archived
+                        </span>
+                      </div>
+                    )}
+
+                    {/* Hover overlay — only GitHub for archived */}
+                    <div className="absolute inset-0 bg-blue-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center gap-4">
                       {project.live && (
                         <a
                           href={project.live}
@@ -67,7 +81,7 @@ export default function Projects() {
                         className="flex items-center gap-2 px-4 py-2 glass border border-white/30 text-white rounded-lg font-semibold text-sm hover:bg-white/10 transition-colors"
                       >
                         <FaGithub className="text-sm" />
-                        Code
+                        View Code
                       </a>
                     </div>
                   </div>
@@ -89,6 +103,14 @@ export default function Projects() {
 
                   <p className="text-slate-400 leading-relaxed text-base">{project.description}</p>
 
+                  {/* Archived notice */}
+                  {project.archived && project.archivedNote && (
+                    <div className="flex items-start gap-2.5 px-4 py-3 rounded-xl bg-slate-800/50 border border-slate-700/50 text-slate-400 text-sm">
+                      <FaArchive className="text-slate-500 shrink-0 mt-0.5" />
+                      <span>{project.archivedNote}</span>
+                    </div>
+                  )}
+
                   {/* Tech tags */}
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((t) => (
@@ -101,8 +123,21 @@ export default function Projects() {
                     ))}
                   </div>
 
-                  {/* Buttons */}
+                  {/* Buttons — GitHub is primary when archived */}
                   <div className="flex gap-3 pt-2">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`inline-flex items-center gap-2 px-5 py-2.5 font-semibold rounded-xl transition-all duration-300 hover:-translate-y-0.5 text-sm ${
+                        project.archived
+                          ? 'bg-blue-500 hover:bg-blue-400 text-white hover:shadow-lg hover:shadow-blue-500/30'
+                          : 'glass border border-blue-500/20 hover:border-blue-400/40 text-slate-200 hover:text-white'
+                      }`}
+                    >
+                      <FaGithub />
+                      View Source Code
+                    </a>
                     {project.live && (
                       <a
                         href={project.live}
@@ -114,15 +149,6 @@ export default function Projects() {
                         Live Demo
                       </a>
                     )}
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-5 py-2.5 glass border border-blue-500/20 hover:border-blue-400/40 text-slate-200 hover:text-white font-semibold rounded-xl transition-all duration-300 hover:-translate-y-0.5 text-sm"
-                    >
-                      <FaGithub />
-                      View Code
-                    </a>
                   </div>
                 </div>
               </div>
