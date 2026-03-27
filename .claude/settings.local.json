@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wsl -d Ubuntu-24.04 -e bash -c \"cd /home/jose/projects/Portfolio-Website && rm -rf node_modules package-lock.json && echo ''Cleaned''\")",
+      "Bash(wsl -d Ubuntu-24.04 -e bash -c \"cd /home/jose/projects/Portfolio-Website && npm install 2>&1 | tail -10\")",
+      "Bash(wsl -d Ubuntu-24.04 -e bash -c \"cd /home/jose/projects/Portfolio-Website && npm run build 2>&1\")",
+      "Bash(wsl -d Ubuntu-24.04 -e bash -c \"cd /home/jose/projects/Portfolio-Website && npx next build 2>&1\")",
+      "Bash(wsl -d Ubuntu-24.04 -- bash -l -c \"cd /home/jose/projects/Portfolio-Website && node --version && npm --version\")",
+      "Bash(wsl -d Ubuntu-24.04 -- bash -c \"which node || ls /usr/local/bin/node 2>/dev/null || ls ~/.nvm/versions/node 2>/dev/null || echo ''node not found''\")",
+      "Bash(wsl -d Ubuntu-24.04 -- bash -c \"export NVM_DIR=\"\"$HOME/.nvm\"\" && [ -s \"\"$NVM_DIR/nvm.sh\"\" ] && . \"\"$NVM_DIR/nvm.sh\"\" && cd /home/jose/projects/Portfolio-Website && npm run build 2>&1\")",
+      "Bash(wsl -d Ubuntu-24.04 -- bash -c \"export NVM_DIR=\"\"$HOME/.nvm\"\" && [ -s \"\"$NVM_DIR/nvm.sh\"\" ] && . \"\"$NVM_DIR/nvm.sh\"\" && cd /home/jose/projects/Portfolio-Website && npm run build 2>&1; echo \"\"EXIT: $?\"\"\")",
+      "Bash(wsl -d Ubuntu-24.04 -- bash -c \"export NVM_DIR=\"\"$HOME/.nvm\"\"; [ -s \"\"$NVM_DIR/nvm.sh\"\" ] && . \"\"$NVM_DIR/nvm.sh\"\"; cd /home/jose/projects/Portfolio-Website && npm run build\")",
+      "Bash(wsl -d Ubuntu-24.04 -- bash -c \"ls /home/jose/.nvm/versions/node/ 2>/dev/null || echo ''no nvm nodes''\")",
+      "Bash(wsl -d Ubuntu-24.04 -- /home/jose/.nvm/versions/node/v22.18.0/bin/node /home/jose/projects/Portfolio-Website/node_modules/.bin/next build --cwd /home/jose/projects/Portfolio-Website)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(wsl -d Ubuntu-24.04 bash /home/jose/projects/Portfolio-Website/build.sh)",
+      "Bash(powershell.exe -Command \"wsl -d Ubuntu-24.04 -- bash -c ''export NVM_DIR=\"\"$HOME/.nvm\"\" && . \"\"$NVM_DIR/nvm.sh\"\" && cd /home/jose/projects/Portfolio-Website && npm run build'' 2>&1\")",
+      "Bash(powershell.exe -Command \"wsl -d Ubuntu-24.04 -- bash /home/jose/projects/Portfolio-Website/build.sh\")",
+      "Bash(powershell.exe -Command \"wsl -d Ubuntu-24.04 -- chmod +x /home/jose/projects/Portfolio-Website/node_modules/.bin/next && echo ''done''\")",
+      "Bash(powershell.exe -Command \"wsl -d Ubuntu-24.04 -- chmod +x /home/jose/projects/Portfolio-Website/node_modules/.bin/next\")",
+      "Bash(powershell.exe -Command \"wsl -d Ubuntu-24.04 -- rm /home/jose/projects/Portfolio-Website/build.sh\")",
+      "Bash(powershell.exe -Command \"wsl -d Ubuntu-24.04 -- rm -rf /home/jose/projects/Portfolio-Website/.next\")"
+    ]
+  }
+}
