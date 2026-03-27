@@ -19,7 +19,9 @@
       "Bash(powershell.exe -Command \"wsl -d Ubuntu-24.04 -- chmod +x /home/jose/projects/Portfolio-Website/node_modules/.bin/next && echo ''done''\")",
       "Bash(powershell.exe -Command \"wsl -d Ubuntu-24.04 -- chmod +x /home/jose/projects/Portfolio-Website/node_modules/.bin/next\")",
       "Bash(powershell.exe -Command \"wsl -d Ubuntu-24.04 -- rm /home/jose/projects/Portfolio-Website/build.sh\")",
-      "Bash(powershell.exe -Command \"wsl -d Ubuntu-24.04 -- rm -rf /home/jose/projects/Portfolio-Website/.next\")"
+      "Bash(powershell.exe -Command \"wsl -d Ubuntu-24.04 -- rm -rf /home/jose/projects/Portfolio-Website/.next\")",
+      "Bash(powershell.exe -Command \"wsl -d Ubuntu-24.04 -- bash /home/jose/projects/Portfolio-Website/install-resend.sh\")",
+      "Bash(powershell.exe -Command \"wsl -d Ubuntu-24.04 -- rm /home/jose/projects/Portfolio-Website/build.sh /home/jose/projects/Portfolio-Website/install-resend.sh\")"
     ]
   }
 }

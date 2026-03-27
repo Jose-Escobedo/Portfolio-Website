@@ -1,28 +1,29 @@
 'use client'
 
-import { useState, useRef, FormEvent } from 'react'
-import emailjs from '@emailjs/browser'
+import { useState, FormEvent } from 'react'
 import { FaEnvelope, FaLinkedin, FaGithub, FaMedium, FaCheckCircle } from 'react-icons/fa'
 import { personalInfo } from '@/lib/data'
 
 export default function Contact() {
-  const formRef = useRef<HTMLFormElement>(null)
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
+  const [fields, setFields] = useState({ name: '', email: '', subject: '', message: '' })
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFields((prev) => ({ ...prev, [e.target.name]: e.target.value }))
+  }
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault()
-    if (!formRef.current) return
-
     setStatus('sending')
     try {
-      await emailjs.sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-        formRef.current,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
-      )
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(fields),
+      })
+      if (!res.ok) throw new Error('Request failed')
       setStatus('success')
-      formRef.current.reset()
+      setFields({ name: '', email: '', subject: '', message: '' })
     } catch {
       setStatus('error')
     }
@@ -55,13 +56,15 @@ export default function Contact() {
     },
   ]
 
+  const inputClass =
+    'px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-slate-100 placeholder-slate-600 text-sm focus:outline-none focus:border-blue-500/50 focus:bg-white/8 transition-all'
+
   return (
     <section id="contact" className="py-24 lg:py-32 relative">
-      {/* Background glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-64 bg-blue-600/8 blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-        {/* Section header */}
+        {/* Header */}
         <div className="text-center mb-16">
           <p className="text-blue-400 text-sm font-semibold uppercase tracking-[0.2em] mb-3">
             Let&apos;s Talk
@@ -109,7 +112,7 @@ export default function Contact() {
           <div className="lg:col-span-3">
             <div className="glass rounded-2xl p-8 border border-blue-500/10">
               {status === 'success' ? (
-                <div className="flex flex-col items-center justify-center h-full gap-4 py-12">
+                <div className="flex flex-col items-center justify-center gap-4 py-12">
                   <FaCheckCircle className="text-5xl text-emerald-400" />
                   <h3 className="text-xl font-bold text-slate-100">Message Sent!</h3>
                   <p className="text-slate-400 text-center text-sm">
@@ -123,7 +126,7 @@ export default function Contact() {
                   </button>
                 </div>
               ) : (
-                <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-5">
+                <form onSubmit={handleSubmit} className="flex flex-col gap-5">
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div className="flex flex-col gap-2">
                       <label className="text-xs font-semibold text-slate-400 uppercase tracking-wider">
@@ -131,10 +134,12 @@ export default function Contact() {
                       </label>
                       <input
                         type="text"
-                        name="user_name"
+                        name="name"
+                        value={fields.name}
+                        onChange={handleChange}
                         required
                         placeholder="John Doe"
-                        className="px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-slate-100 placeholder-slate-600 text-sm focus:outline-none focus:border-blue-500/50 focus:bg-white/8 transition-all"
+                        className={inputClass}
                       />
                     </div>
                     <div className="flex flex-col gap-2">
@@ -143,10 +148,12 @@ export default function Contact() {
                       </label>
                       <input
                         type="email"
-                        name="user_email"
+                        name="email"
+                        value={fields.email}
+                        onChange={handleChange}
                         required
                         placeholder="john@example.com"
-                        className="px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-slate-100 placeholder-slate-600 text-sm focus:outline-none focus:border-blue-500/50 focus:bg-white/8 transition-all"
+                        className={inputClass}
                       />
                     </div>
                   </div>
@@ -158,8 +165,10 @@ export default function Contact() {
                     <input
                       type="text"
                       name="subject"
+                      value={fields.subject}
+                      onChange={handleChange}
                       placeholder="Project inquiry"
-                      className="px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-slate-100 placeholder-slate-600 text-sm focus:outline-none focus:border-blue-500/50 focus:bg-white/8 transition-all"
+                      className={inputClass}
                     />
                   </div>
 
@@ -169,16 +178,21 @@ export default function Contact() {
                     </label>
                     <textarea
                       name="message"
+                      value={fields.message}
+                      onChange={handleChange}
                       required
                       rows={5}
                       placeholder="Tell me about your project..."
-                      className="px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-slate-100 placeholder-slate-600 text-sm focus:outline-none focus:border-blue-500/50 focus:bg-white/8 transition-all resize-none"
+                      className={`${inputClass} resize-none`}
                     />
                   </div>
 
                   {status === 'error' && (
                     <p className="text-sm text-red-400 bg-red-500/10 border border-red-500/20 rounded-lg px-4 py-2">
-                      Something went wrong. Please try emailing me directly at {personalInfo.email}
+                      Something went wrong. Please email me directly at{' '}
+                      <a href={`mailto:${personalInfo.email}`} className="underline">
+                        {personalInfo.email}
+                      </a>
                     </p>
                   )}
 
