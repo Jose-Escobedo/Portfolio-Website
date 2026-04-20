@@ -59,6 +59,18 @@ export const projects = [
   },
   {
     id: 4,
+    title: 'Champion Building',
+    subtitle: 'Construction Company SPA',
+    description:
+      'Single-page application (SPA) built for a construction company — zero page reloads, fast client-side navigation, and a polished user experience. Features contact form integration via EmailJS, image galleries powered by Swiper.js, Firebase backend, and Google Analytics tracking.',
+    tech: ['React', 'React Router', 'Styled Components', 'Firebase', 'EmailJS', 'Swiper.js', 'Google Analytics', 'Node.js'],
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/tortas-bffc7.appspot.com/o/Screenshot%202026-04-19%20235038.png?alt=media&token=49bb6461-0525-45c8-a221-47f682249617',
+    live: 'https://championandchamp.com',
+    github: 'https://github.com/Jose-Escobedo/championbuilding',
+  },
+  {
+    id: 5,
     title: 'Escobedo Photography',
     subtitle: 'Gatsby Photography Portfolio',
     description:
